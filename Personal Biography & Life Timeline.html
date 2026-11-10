@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>রাকিবুল ইসলাম | জীবনের গল্প ও পোর্টফোলিও (২০০৮ - ২০২৬)</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="রাকিবুল ইসলামের জীবন সফর, শিক্ষাগত যোগ্যতা, অ্যান্ড্রয়েড অ্যাপ ডেভেলপমেন্ট ও ওয়েব ডিজাইন দক্ষতা এবং পেশাগত জীবন (২০০৮-২০২৬)।">
+    <meta name="keywords" content="রাকিবুল ইসলাম, Rakibul Islam, Life History, Timeline, Web Designer, Android Developer, Banshkhali, Chittagong">
+    <meta name="author" content="Rakibul Islam">
+    <meta property="og:title" content="রাকিবুল ইসলাম | জীবনের গল্প ও পোর্টফোলিও">
+    <meta property="og:description" content="২০০৮ থেকে ২০২৬ পর্যন্ত রাকিবুল ইসলামের জীবনের নানা সাফল্যময় অধ্যায় ও দক্ষতার চিত্র।">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                            900: '#064e3b',
+                        },
+                        darkBg: '#0f172a',
+                        cardBg: 'rgba(30, 41, 59, 0.7)',
+                    },
+                    fontFamily: {
+                        sans: ['Kalpurush', 'Hind Siliguri', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts for Bengali -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            background-color: #0b1120;
+            color: #f1f5f9;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism styling */
+        .glass-card {
+            background: rgba(30, 41, 59, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Gradient Glow Effects */
+        .glow-emerald {
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.3);
+        }
+
+        /* Animated Canvas background position */
+        #bgCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #059669;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #10b981;
+        }
+
+        /* Timeline Connector line animation */
+        .timeline-line {
+            background: linear-gradient(180deg, #10b981 0%, #3b82f6 50%, #8b5cf6 100%);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- Interactive Background Canvas -->
+    <canvas id="bgCanvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#hero" class="flex items-center space-x-3 text-2xl font-bold tracking-tight text-white">
+                <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-300 flex items-center justify-center text-slate-900 shadow-lg font-black text-xl">রা</span>
+                <span class="bg-gradient-to-r from-emerald-400 to-teal-200 bg-clip-text text-transparent">রাকিবুল ইসলাম</span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-emerald-400 transition-colors">আমার সম্পর্কে</a>
+                <a href="#timeline" class="hover:text-emerald-400 transition-colors">জীবন সফর (২০০৮-২০২৬)</a>
+                <a href="#skills" class="hover:text-emerald-400 transition-colors">দক্ষতা</a>
+                <a href="#education" class="hover:text-emerald-400 transition-colors">শিক্ষা ও কাজ</a>
+                <a href="#certificates" class="hover:text-emerald-400 transition-colors">সার্টিফিকেট</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div class="hidden md:block">
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-medium shadow-lg hover:shadow-emerald-500/25 transition-all transform hover:-translate-y-0.5">
+                    যোগাযোগ করুন
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobileMenuBtn" class="md:hidden text-gray-300 hover:text-white focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobileMenu" class="hidden md:hidden glass-card border-t border-slate-700/50 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-gray-300 hover:text-emerald-400 font-medium">আমার সম্পর্কে</a>
+            <a href="#timeline" class="block py-2 text-gray-300 hover:text-emerald-400 font-medium">জীবন সফর (২০০৮-২০২৬)</a>
+            <a href="#skills" class="block py-2 text-gray-300 hover:text-emerald-400 font-medium">দক্ষতা</a>
+            <a href="#education" class="block py-2 text-gray-300 hover:text-emerald-400 font-medium">শিক্ষা ও কাজ</a>
+            <a href="#certificates" class="block py-2 text-gray-300 hover:text-emerald-400 font-medium">সার্টিফিকেট</a>
+            <a href="#contact" class="inline-block mt-2 w-full text-center py-2.5 rounded-xl bg-emerald-500 text-white font-medium">যোগাযোগ করুন</a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="pt-24">
+
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-[88vh] flex items-center justify-center relative px-4 sm:px-6 lg:px-8 py-12">
+            <div class="max-w-5xl mx-auto text-center">
+                <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full glass-card text-emerald-400 text-sm font-medium mb-8 animate-bounce">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span>স্বাগতম আমার ব্যক্তিগত ডিজিটাল লাইফ স্টোরিতে</span>
+                </div>
+                
+                <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                    আমি <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">রাকিবুল ইসলাম</span>
+                </h1>
+                
+                <p class="text-lg sm:text-2xl text-slate-300 max-w-3xl mx-auto mb-10 font-normal leading-relaxed">
+                    অ্যান্ড্রয়েড মোবাইল অ্যাপ ডেভেলপার, ওয়েব ডিজাইনার এবং ইসলামিক স্টাডিজের একজন উদ্যমী ও বহুমুখী প্রতিভাধর শিক্ষার্থী।
+                </p>
+
+                <!-- Key Quick Info Pill Badges -->
+                <div class="flex flex-wrap justify-center gap-3 mb-12">
+                    <span class="glass-card px-4 py-2 rounded-xl text-sm font-medium text-slate-300 flex items-center gap-2">
+                        <i class="fa-solid fa-cake-candles text-emerald-400"></i> ২০ আগস্ট ২০০৮
+                    </span>
+                    <span class="glass-card px-4 py-2 rounded-xl text-sm font-medium text-slate-300 flex items-center gap-2">
+                        <i class="fa-solid fa-location-dot text-emerald-400"></i> বাঁশখালী, চট্টগ্রাম
+                    </span>
+                    <span class="glass-card px-4 py-2 rounded-xl text-sm font-medium text-slate-300 flex items-center gap-2">
+                        <i class="fa-solid fa-laptop-code text-emerald-400"></i> অ্যাপস ও ওয়েব ডেভেলপার
+                    </span>
+                    <span class="glass-card px-4 py-2 rounded-xl text-sm font-medium text-slate-300 flex items-center gap-2">
+                        <i class="fa-solid fa-book-quran text-emerald-400"></i> ইসলামিক স্টাডিজ
+                    </span>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#timeline" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-semibold shadow-xl hover:shadow-emerald-500/30 transition-all transform hover:-translate-y-1">
+                        জীবন সফর দেখুন <i class="fa-solid fa-arrow-down ml-2"></i>
+                    </a>
+                    <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-2xl glass-card hover:bg-slate-800/80 text-white font-semibold transition-all">
+                        বিস্তারিত পরিচিতি
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Overview Counter Bar -->
+        <section class="py-10 border-y border-slate-800/80 bg-slate-900/40 backdrop-blur-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="p-4 rounded-2xl glass-card">
+                        <div class="text-3xl md:text-4xl font-extrabold text-emerald-400 mb-1" id="statAge">১৮</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">বছর বয়স (২০০৮ - ২০২৬)</div>
+                    </div>
+                    <div class="p-4 rounded-2xl glass-card">
+                        <div class="text-3xl md:text-4xl font-extrabold text-teal-400 mb-1">৫+</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">শিক্ষাগত ডিগ্রি/সনদ</div>
+                    </div>
+                    <div class="p-4 rounded-2xl glass-card">
+                        <div class="text-3xl md:text-4xl font-extrabold text-cyan-400 mb-1">২টি</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">আন্তর্জাতিক সার্টিফিকেট</div>
+                    </div>
+                    <div class="p-4 rounded-2xl glass-card">
+                        <div class="text-3xl md:text-4xl font-extrabold text-emerald-400 mb-1">১+</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">পেশাগত অভিজ্ঞতা বছর</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Personal Info Section -->
+        <section id="about" class="py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">ব্যক্তিগত পরিচয় ও জীবন বৃত্তান্ত</h2>
+                    <div class="w-20 h-1.5 bg-emerald-500 mx-auto rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                    <!-- Bio Card -->
+                    <div class="lg:col-span-2 glass-card p-8 rounded-3xl flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-emerald-400 mb-4 flex items-center gap-3">
+                                <i class="fa-solid fa-user-gear"></i> সংক্ষিপ্ত পরিচিতি
+                            </h3>
+                            <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-6">
+                                আমি একজন উদ্যমী, দক্ষ এবং বহুমুখী প্রতিভাধর ব্যক্তি। সাধারণ শিক্ষা ও মাদরাসা শিক্ষার শক্ত ভিত্তির পাশাপাশি আইসিটি এবং শিক্ষাদান ও প্রাতিষ্ঠানিক কাজের বাস্তব অভিজ্ঞতা আমার রয়েছে। মোবাইল অ্যাপ ডেভেলপমেন্ট ও ওয়েবসাইটের আকর্ষণীয় ডিজাইন তৈরিতে আমি সর্বদা আগ্রহী।
+                            </p>
+                        </div>
+
+                        <!-- Personal Details Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6 border-t border-slate-700/60">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">পিতার নাম</p>
+                                    <p class="font-medium text-slate-200">আবুল বশর</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">মাতার নাম</p>
+                                    <p class="font-medium text-slate-200">ছুনিয়া বেগম</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400">
+                                    <i class="fa-solid fa-house-chimney"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">স্থায়ী ঠিকানা</p>
+                                    <p class="font-medium text-slate-200">গন্দমারা, ০১ নং ওয়ার্ড, বাঁশখালী, চট্টগ্রাম</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400">
+                                    <i class="fa-solid fa-flag"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">জাতীয়তা ও ধর্ম</p>
+                                    <p class="font-medium text-slate-200">বাংলাদেশি (ইসলাম)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages & Quick Info -->
+                    <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-emerald-400 mb-6 flex items-center gap-3">
+                                <i class="fa-solid fa-language"></i> ভাষাগত দক্ষতা
+                            </h3>
+                            
+                            <div class="space-y-5">
+                                <div>
+                                    <div class="flex justify-between text-sm font-medium mb-1">
+                                        <span>বাংলা (মাতৃভাষা)</span>
+                                        <span class="text-emerald-400">১০০%</span>
+                                    </div>
+                                    <div class="w-full h-2 bg-slate-700 rounded-full overflow-hidden">
+                                        <div class="h-full bg-emerald-500 rounded-full w-[100%]"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex justify-between text-sm font-medium mb-1">
+                                        <span>আরবি (ইসলামিক স্টাডিজ)</span>
+                                        <span class="text-teal-400">৮৫%</span>
+                                    </div>
+                                    <div class="w-full h-2 bg-slate-700 rounded-full overflow-hidden">
+                                        <div class="h-full bg-teal-400 rounded-full w-[85%]"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex justify-between text-sm font-medium mb-1">
+                                        <span>ইংরেজি (পেশাগত ও হেলথকেয়ার)</span>
+                                        <span class="text-cyan-400">৯০%</span>
+                                    </div>
+                                    <div class="w-full h-2 bg-slate-700 rounded-full overflow-hidden">
+                                        <div class="h-full bg-cyan-400 rounded-full w-[90%]"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-6 border-t border-slate-700/60">
+                            <div class="bg-emerald-950/40 border border-emerald-500/30 rounded-2xl p-4 text-center">
+                                <p class="text-xs text-emerald-300 mb-1">জন্ম নিবন্ধন নম্বর</p>
+                                <p class="font-mono text-sm tracking-wider text-emerald-400 font-bold">২০০৮-১৫line To৮৩১১১১০২৬</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chronological Life Timeline Section (2008 - 2026) -->
+        <section id="timeline" class="py-20 relative bg-slate-900/30">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="text-emerald-400 text-sm font-semibold uppercase tracking-widest">জীবনের ধারাবাহিক ইতিহাস</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-2 mb-4">লাইফ টাইমলাইন (২০০৮ - ২০২৬)</h2>
+                    <p class="text-slate-400 max-w-xl mx-auto">আমার জন্ম থেকে আজ পর্যন্ত প্রতিটি উল্লেখযোগ্য অর্জনের সময়রেখা</p>
+                    <div class="w-24 h-1.5 bg-gradient-to-r from-emerald-500 to-teal-400 mx-auto rounded-full mt-4"></div>
+                </div>
+
+                <div class="relative">
+                    <!-- Vertical Line -->
+                    <div class="hidden sm:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 timeline-line rounded-full"></div>
+                    <div class="sm:hidden absolute left-6 h-full w-1 timeline-line rounded-full"></div>
+
+                    <!-- Timeline Item 1: 2008 -->
+                    <div class="relative mb-12 sm:mb-16">
+                        <div class="flex flex-col sm:flex-row items-center">
+                            <div class="flex justify-start sm:justify-end w-full sm:w-1/2 pr-0 sm:pr-12 pl-14 sm:pl-0 mb-4 sm:mb-0">
+                                <div class="glass-card p-6 rounded-2xl border-l-4 border-emerald-500 w-full hover:scale-[1.02] transition-transform">
+                                    <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold mb-2">২০০৮ সাল</span>
+                                    <h3 class="text-xl font-bold text-white mb-1">শুভ জন্ম ও পৃথিবীর আলো দেখা</h3>
+                                    <p class="text-slate-300 text-sm">২০ আগস্ট ২০০৮ তারিখে চট্টগ্রাম জেলার বাঁশখালী উপজেলার গন্দমারা গ্রামে (০১ নং ওয়ার্ড) জন্মগ্রহণ করি।</p>
+                                </div>
+                            </div>
+                            <!-- Circle Marker -->
+                            <div class="absolute left-6 sm:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-emerald-500 text-slate-900 font-bold flex items-center justify-center shadow-lg shadow-emerald-500/50 z-10 border-4 border-slate-900">
+                                <i class="fa-solid fa-baby text-xs"></i>
+                            </div>
+                            <div class="w-full sm:w-1/2 pl-0 sm:pl-12"></div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2: 2018 -->
+                    <div class="relative mb-12 sm:mb-16">
+                        <div class="flex flex-col sm:flex-row items-center">
+                            <div class="w-full sm:w-1/2 pr-0 sm:pr-12"></div>
+                            <!-- Circle Marker -->
+                            <div class="absolute left-6 sm:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-teal-400 text-slate-900 font-bold flex items-center justify-center shadow-lg shadow-teal-400/50 z-10 border-4 border-slate-900">
+                                <i class="fa-solid fa-graduation-cap text-xs"></i>
+                            </div>
+                            <div class="flex justify-start w-full sm:w-1/2 pl-14 sm:pl-12">
+                                <div class="glass-card p-6 rounded-2xl border-l-4 border-teal-400 w-full hover:scale-[1.02] transition-transform">
+                                    <span class="inline-block px-3 py-1 rounded-full bg-teal-400/20 text-teal-300 text-xs font-bold mb-2">২০১৮ সাল</span>
+                                    <h3 class="text-xl font-bold text-white mb-1">ইবতেদায়ী সমাপনী সাফল্য</h3>
+                                    <p class="text-slate-300 text-sm">পশ্চিম বাঁশখালী রহমানিয়া মাদরাসা থেকে প্রাতিষ্ঠানিক প্রাথমিক শিক্ষা সাফল্যের সাথে শেষ করি।</p>
+                                    <span class="inline-block mt-3 text-xs bg-slate-800 text-teal-300 font-semibold px-2.5 py-1 rounded-lg">জিপিএ: ৩.৭৫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3: 2021 -->
+                    <div class="relative mb-12 sm:mb-16">
+                        <div class="flex flex-col sm:flex-row items-center">
+                            <div class="flex justify-start sm:justify-end w-full sm:w-1/2 pr-0 sm:pr-12 pl-14 sm:pl-0 mb-4 sm:mb-0">
+                                <div class="glass-card p-6 rounded-2xl border-l-4 border-cyan-400 w-full hover:scale-[1.02] transition-transform">
+                                    <span class="inline-block px-3 py-1 rounded-full bg-cyan-400/20 text-cyan-300 text-xs font-bold mb-2">২০২১ সাল</span>
+                                    <h3 class="text-xl font-bold text-white mb-1">জেএসসি / সমমান পরীক্ষা পাশ</h3>
+                                    <p class="text-slate-300 text-sm">নাংলমোহরা ফাযিল মাদরাসা থেকে সাধারণ বিভাগে সফলতার সাথে জেএসসি বা সমমান পরীক্ষায় উত্তীর্ণ হই।</p>
+                                </div>
+                            </div>
+                            <!-- Circle Marker -->
+                            <div class="absolute left-6 sm:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-cyan-400 text-slate-900 font-bold flex items-center justify-center shadow-lg shadow-cyan-400/50 z-10 border-4 border-slate-900">
+                                <i class="fa-solid fa-award text-xs"></i>
+                            </div>
+                            <div class="w-full sm:w-1/2 pl-0 sm:pl-12"></div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4: 2022 - 2023 -->
+                    <div class="relative mb-12 sm:mb-16">
+                        <div class="flex flex-col sm:flex-row items-center">
+                            <div class="w-full sm:w-1/2 pr-0 sm:pr-12"></div>
+                            <!-- Circle Marker -->
+                            <div class="absolute left-6 sm:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-emerald-400 text-slate-900 font-bold flex items-center justify-center shadow-lg shadow-emerald-400/50 z-10 border-4 border-slate-900">
+                                <i class="fa-solid fa-book-open text-xs"></i>
+                            </div>
+                            <div class="flex justify-start w-full sm:w-1/2 pl-14 sm:pl-12">
+                                <div class="glass-card p-6 rounded-2xl border-l-4 border-emerald-400 w-full hover:scale-[1.02] transition-transform">
+                                    <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold mb-2">২০২২ - ২০২৩ সাল</span>
+                                    <h3 class="text-xl font-bold text-white mb-1">এসএসসি / দাখিল সম্পন্ন</h3>
+                                    <p class="text-slate-300 text-sm">নাংলমোহরা ফাযিল মাদরাসা থেকে সাধারণ গ্রুপে দাখিল পরীক্ষায় কৃতিত্বের সাথে জিপিএ ৪.৫০ লাভ করি।</p>
+                                    <span class="inline-block mt-3 text-xs bg-slate-800 text-emerald-400 font-semibold px-2.5 py-1 rounded-lg">জিপিএ: ৪.৫০</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 5: 2024 - 2025 -->
+                    <div class="relative mb-12 sm:mb-16">
+                        <div class="flex flex-col sm:flex-row items-center">
+                            <div class="flex justify-start sm:justify-end w-full sm:w-1/2 pr-0 sm:pr-12 pl-14 sm:pl-0 mb-4 sm:mb-0">
+                                <div class="glass-card p-6 rounded-2xl border-l-4 border-blue-500 w-full hover:scale-[1.02] transition-transform">
+                                    <span class="inline-block px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-bold mb-2">২০২৪ - ২০২৫ সাল</span>
+                                    <h3 class="text-xl font-bold text-white mb-1">এইচএসসি / আলিম ও কিতাব বিভাগ</h3>
+                                    <p class="text-slate-300 text-sm">নাংলমোহরা ফাযিল মাদরাসা থেকে আলিম সম্পন্ন (জিপিএ ৩.৫০)। একই সময়ে জামিআতুল মদিনা থেকে কিতাব বিভাগ (৪র্থ বর্ষ) সম্পন্ন করি।</p>
+                                    <div class="flex gap-2 mt-3">
+                                        <span class="text-xs bg-slate-800 text-blue-400 font-semibold px-2.5 py-1 rounded-lg">আলিম জিপিএ: ৩.৫০</span>
+                                        <span class="text-xs bg-slate-800 text-blue-300 font-semibold px-2.5 py-1 rounded-lg">কিতাব বিভাগ সম্পন্ন</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Circle Marker -->
+                            <div class="absolute left-6 sm:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-blue-500 text-white font-bold flex items-center justify-center shadow-lg shadow-blue-500/50 z-10 border-4 border-slate-900">
+                                <i class="fa-solid fa-school text-xs"></i>
+                            </div>
+                            <div class="w-full sm:w-1/2 pl-0 sm:pl-12"></div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 6: 2025 - 2026 -->
+                    <div class="relative mb-12 sm:mb-16">
+                        <div class="flex flex-col sm:flex-row items-center">
+                            <div class="w-full sm:w-1/2 pr-0 sm:pr-12"></div>
+                            <!-- Circle Marker -->
+                            <div class="absolute left-6 sm:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-purple-500 text-white font-bold flex items-center justify-center shadow-lg shadow-purple-500/50 z-10 border-4 border-slate-900">
+                                <i class="fa-solid fa-chalkboard-user text-xs"></i>
+                            </div>
+                            <div class="flex justify-start w-full sm:w-1/2 pl-14 sm:pl-12">
+                                <div class="glass-card p-6 rounded-2xl border-l-4 border-purple-500 w-full hover:scale-[1.02] transition-transform">
+                                    <span class="inline-block px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 text-xs font-bold mb-2">২০২৫ - ২০২৬ সাল</span>
+                                    <h3 class="text-xl font-bold text-white mb-1">পেশাগত অভিজ্ঞতা (শিক্ষকতা)</h3>
+                                    <p class="text-slate-300 text-sm">পাউছিয়া তৈয়বিয়া তাহফীজুল কুরআন মডেল মাদরাসায় হিফজ ও নূরানী বিভাগের শিক্ষক হিসেবে সুনাম ও শৃঙ্খলার সাথে দায়িত্ব পালন করি।</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 7: 2026 (Present Tech Milestone) -->
+                    <div class="relative">
+                        <div class="flex flex-col sm:flex-row items-center">
+                            <div class="flex justify-start sm:justify-end w-full sm:w-1/2 pr-0 sm:pr-12 pl-14 sm:pl-0 mb-4 sm:mb-0">
+                                <div class="glass-card p-6 rounded-2xl border-l-4 border-emerald-400 w-full hover:scale-[1.02] transition-transform bg-gradient-to-br from-emerald-950/30 to-slate-900">
+                                    <span class="inline-block px-3 py-1 rounded-full bg-emerald-400/20 text-emerald-300 text-xs font-bold mb-2">২০২৬ সাল (বর্তমান)</span>
+                                    <h3 class="text-xl font-bold text-white mb-1">প্রযুক্তি ও আর্টিফিশিয়াল ইন্টেলিজেন্স সাফল্য</h3>
+                                    <p class="text-slate-300 text-sm">সেইলর একাডেমি থেকে AI এবং Healthcare English এর উপর প্রফেশনাল সার্টিফিকেট অর্জন এবং অ্যান্ড্রয়েড অ্যাপ ও ওয়েবল্যান্ডিং ডিজাইনে দক্ষতা অর্জন।</p>
+                                </div>
+                            </div>
+                            <!-- Circle Marker -->
+                            <div class="absolute left-6 sm:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-emerald-400 text-slate-900 font-bold flex items-center justify-center shadow-lg shadow-emerald-400/50 z-10 border-4 border-slate-900 animate-pulse">
+                                <i class="fa-solid fa-microchip text-xs"></i>
+                            </div>
+                            <div class="w-full sm:w-1/2 pl-0 sm:pl-12"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical & Professional Skills Section -->
+        <section id="skills" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">দক্ষতা ও পারদর্শিতা</h2>
+                    <p class="text-slate-400">প্রযুক্তি এবং ইসলামিক জ্ঞানের সমন্বয়ে অর্জিত দক্ষতা</p>
+                    <div class="w-20 h-1.5 bg-emerald-500 mx-auto rounded-full mt-4"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Skill 1 -->
+                    <div class="glass-card p-6 rounded-2xl hover:border-emerald-500/50 transition-all text-center group">
+                        <div class="w-16 h-16 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-3xl mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-brands fa-android"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">অ্যান্ড্রয়েড অ্যাপ ডেভেলপমেন্ট</h3>
+                        <p class="text-slate-400 text-sm">মোবাইল প্ল্যাটফর্মের জন্য ব্যবহারবান্ধব অ্যান্ড্রয়েড অ্যাপ্লিকেশন তৈরি।</p>
+                    </div>
+
+                    <!-- Skill 2 -->
+                    <div class="glass-card p-6 rounded-2xl hover:border-teal-400/50 transition-all text-center group">
+                        <div class="w-16 h-16 rounded-2xl bg-teal-400/10 text-teal-300 flex items-center justify-center text-3xl mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">ওয়েব ডিজাইন</h3>
+                        <p class="text-slate-400 text-sm">আধুনিক, রেসপন্সিভ এবং নান্দনিক ওয়েব লেআউট ডিজাইন করা।</p>
+                    </div>
+
+                    <!-- Skill 3 -->
+                    <div class="glass-card p-6 rounded-2xl hover:border-cyan-400/50 transition-all text-center group">
+                        <div class="w-16 h-16 rounded-2xl bg-cyan-400/10 text-cyan-300 flex items-center justify-center text-3xl mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">কৃত্রিম বুদ্ধিমত্তা (AI)</h3>
+                        <p class="text-slate-400 text-sm">AI টুলস ও প্রযুক্তি ব্যবহার করে কাজের গতি ও দক্ষতা বৃদ্ধি।</p>
+                    </div>
+
+                    <!-- Skill 4 -->
+                    <div class="glass-card p-6 rounded-2xl hover:border-purple-400/50 transition-all text-center group">
+                        <div class="w-16 h-16 rounded-2xl bg-purple-400/10 text-purple-300 flex items-center justify-center text-3xl mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-book-quran"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">ইসলামিক স্টাডিজ</h3>
+                        <p class="text-slate-400 text-sm">মাদরাসা শিক্ষার উচ্চতর অভিজ্ঞতা ও ইসলামিক শিক্ষকতা।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Work Experience Tables -->
+        <section id="education" class="py-20 bg-slate-900/40">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Education Table -->
+                <div class="mb-16">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-white">শিক্ষাগত যোগ্যতার বিবরণী</h2>
+                    </div>
+
+                    <div class="overflow-x-auto glass-card rounded-2xl border border-slate-700/60">
+                        <table class="w-full text-left text-sm sm:text-base">
+                            <thead class="bg-slate-800/80 text-emerald-400 uppercase text-xs sm:text-sm font-semibold tracking-wider">
+                                <tr>
+                                    <th class="p-4 sm:p-5">ডিগ্রী/পরীক্ষা</th>
+                                    <th class="p-4 sm:p-5">বিভাগ/গ্রুপ</th>
+                                    <th class="p-4 sm:p-5">শিক্ষা প্রতিষ্ঠান</th>
+                                    <th class="p-4 sm:p-5">বোর্ড/সেশন</th>
+                                    <th class="p-4 sm:p-5">ফলাফল</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-700/50 text-slate-300">
+                                <tr class="hover:bg-slate-800/40 transition-colors">
+                                    <td class="p-4 sm:p-5 font-semibold text-white">কিতাব বিভাগ (৪র্থ বর্ষ)</td>
+                                    <td class="p-4 sm:p-5">মাদরাসা</td>
+                                    <td class="p-4 sm:p-5">জামিআতুল মদিনা</td>
+                                    <td class="p-4 sm:p-5">বিশেষ মাদরাসা</td>
+                                    <td class="p-4 sm:p-5"><span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-400">সম্পন্ন</span></td>
+                                </tr>
+                                <tr class="hover:bg-slate-800/40 transition-colors">
+                                    <td class="p-4 sm:p-5 font-semibold text-white">আলিম (এইচএসসি)</td>
+                                    <td class="p-4 sm:p-5">জেনারেল</td>
+                                    <td class="p-4 sm:p-5">নাংলমোহরা ফাযিল মাদরাসা</td>
+                                    <td class="p-4 sm:p-5">মাদরাসা (২০২৪-২৫)</td>
+                                    <td class="p-4 sm:p-5"><span class="px-3 py-1 rounded-full text-xs font-semibold bg-teal-500/20 text-teal-300">GPA: ৩.৫০</span></td>
+                                </tr>
+                                <tr class="hover:bg-slate-800/40 transition-colors">
+                                    <td class="p-4 sm:p-5 font-semibold text-white">দাখিল (এসএসসি)</td>
+                                    <td class="p-4 sm:p-5">জেনারেল</td>
+                                    <td class="p-4 sm:p-5">নাংলমোহরা ফাযিল মাদরাসা</td>
+                                    <td class="p-4 sm:p-5">মাদরাসা (২০২২-২৩)</td>
+                                    <td class="p-4 sm:p-5"><span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-400">GPA: ৪.৫০</span></td>
+                                </tr>
+                                <tr class="hover:bg-slate-800/40 transition-colors">
+                                    <td class="p-4 sm:p-5 font-semibold text-white">জেএসসি বা সমমান</td>
+                                    <td class="p-4 sm:p-5">সাধারণ</td>
+                                    <td class="p-4 sm:p-5">নাংলমোহরা ফাযিল মাদরাসা</td>
+                                    <td class="p-4 sm:p-5">মাদরাসা (২০২১)</td>
+                                    <td class="p-4 sm:p-5"><span class="px-3 py-1 rounded-full text-xs font-semibold bg-cyan-500/20 text-cyan-300">উত্তীর্ণ</span></td>
+                                </tr>
+                                <tr class="hover:bg-slate-800/40 transition-colors">
+                                    <td class="p-4 sm:p-5 font-semibold text-white">ইবতেদায়ী সমাপনী</td>
+                                    <td class="p-4 sm:p-5">সাধারণ</td>
+                                    <td class="p-4 sm:p-5">পশ্চিম বাঁশখালী রহমানিয়া</td>
+                                    <td class="p-4 sm:p-5">প্রাথমিক শিক্ষা (২০১৮)</td>
+                                    <td class="p-4 sm:p-5"><span class="px-3 py-1 rounded-full text-xs font-semibold bg-teal-500/20 text-teal-300">GPA: ৩.৭৫</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Work Experience Block -->
+                <div>
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-white">পেশাগত কাজের অভিজ্ঞতা</h2>
+                    </div>
+
+                    <div class="glass-card p-6 sm:p-8 rounded-2xl border-l-4 border-purple-500">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">শিক্ষক (হিফজ ও নূরানী বিভাগ)</h3>
+                                <p class="text-emerald-400 font-medium">পাউছিয়া তৈয়বিয়া তাহফীজুল কুরআন মডেল মাদরাসা</p>
+                            </div>
+                            <span class="mt-2 sm:mt-0 inline-block px-4 py-1.5 rounded-full bg-purple-500/20 text-purple-300 text-sm font-semibold w-fit">
+                                ২০২৫ - ২০২৬
+                            </span>
+                        </div>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            <i class="fa-solid fa-circle-check text-emerald-400 mr-2"></i> শিক্ষার্থীদের মেধা ও শৃঙ্খলার মান বজায় রেখে পরিচালনা করা, নিয়মিত ব্যক্তিগত উন্নতি পর্যবেক্ষণ এবং অভিভাবকদের নিকট নিয়মিত অগ্রগতির রিপোর্ট প্রদান করা।
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certificates" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">সার্টিফিকেট ও পেশাগত প্রশিক্ষণ</h2>
+                    <p class="text-slate-400">আন্তর্জাতিক লার্নিং প্ল্যাটফর্ম থেকে প্রাপ্ত সনদপত্র</p>
+                    <div class="w-20 h-1.5 bg-emerald-500 mx-auto rounded-full mt-4"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Certificate 1 -->
+                    <div class="glass-card p-8 rounded-3xl relative overflow-hidden group hover:border-emerald-500/50 transition-all">
+                        <div class="absolute -right-6 -bottom-6 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl group-hover:bg-emerald-500/20 transition-all"></div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold">২০২৬ সাল</span>
+                            <span class="text-2xl text-emerald-400 font-extrabold">৮৮.২৪%</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">CS205: Building with AI</h3>
+                        <p class="text-slate-400 text-sm mb-4">কৃত্রিম বুদ্ধিমত্তা (AI) ব্যবহার করে সিস্টেম তৈরি ও কাজ সম্পাদনের বিশেষ কোর্স।</p>
+                        <div class="space-y-2 text-xs text-slate-300 pt-4 border-t border-slate-700/60">
+                            <p><strong class="text-slate-400">প্রতিষ্ঠান:</strong> সেইলর একাডেমি (Saylor Academy)</p>
+                            <p><strong class="text-slate-400">সার্টিফিকেট আইডি:</strong> <span class="font-mono text-emerald-400">3974811819RI</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2 -->
+                    <div class="glass-card p-8 rounded-3xl relative overflow-hidden group hover:border-cyan-500/50 transition-all">
+                        <div class="absolute -right-6 -bottom-6 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl group-hover:bg-cyan-500/20 transition-all"></div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 text-xs font-bold">২০২৬ সাল</span>
+                            <span class="text-2xl text-cyan-400 font-extrabold">৯৫.০০%</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">ESL006: Healthcare English</h3>
+                        <p class="text-slate-400 text-sm mb-4">স্বাস্থ্যসেবা সংক্রান্ত পেশাগত ইংরেজি ভাষা দক্ষতা কোর্স।</p>
+                        <div class="space-y-2 text-xs text-slate-300 pt-4 border-t border-slate-700/60">
+                            <p><strong class="text-slate-400">প্রতিষ্ঠান:</strong> সেইলর একাডেমি (Saylor Academy)</p>
+                            <p><strong class="text-slate-400">সার্টিফিকেট আইডি:</strong> <span class="font-mono text-cyan-400">5046200687RI</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-slate-900/50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="glass-card p-8 sm:p-12 rounded-3xl border border-emerald-500/30">
+                    <h2 class="text-3xl font-bold text-white mb-4">যোগাযোগ করতে চান?</h2>
+                    <p class="text-slate-300 mb-8 max-w-lg mx-auto">অ্যাপ ডেভেলপমেন্ট, ওয়েব ডিজাইন কিংবা কোনো প্রাতিষ্ঠানিক কাজের বিষয়ে আমাকে সরাসরি বার্তা পাঠাতে পারেন।</p>
+                    
+                    <div class="inline-flex flex-col sm:flex-row gap-4 items-center justify-center">
+                        <a href="mailto:contact@rakibul.com" onclick="copyEmail(event)" class="px-8 py-4 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold shadow-lg transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-envelope"></i> ঠিকানা বা তথ্য কপি করুন
+                        </a>
+                    </div>
+                    <p id="copyAlert" class="text-xs text-emerald-400 mt-3 hidden">ঠিকানা কপি হয়েছে!</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>© ২০০৮ - ২০২৬ রাকিবুল ইসলাম। সর্বস্বত্ব সংরক্ষিত।</p>
+            <p class="text-xs text-slate-600 mt-1">গন্দমারা, বাঁশখালী, চট্টগ্রাম, বাংলাদেশ</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Canvas & Interactive Scripts -->
+    <script>
+        // Mobile Menu Toggle logic
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Copy button script
+        function copyEmail(e) {
+            e.preventDefault();
+            const textToCopy = "রাকিবুল ইসলাম - গন্দমারা, বাঁশখালী, চট্টগ্রাম";
+            const tempInput = document.createElement("input");
+            tempInput.value = textToCopy;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            
+            const alertMsg = document.getElementById('copyAlert');
+            alertMsg.classList.remove('hidden');
+            setTimeout(() => {
+                alertMsg.classList.add('hidden');
+            }, 3000);
+        }
+
+        // Animated Particle Background Canvas Script
+        const canvas = document.getElementById('bgCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let particlesArray = [];
+        const numberOfParticles = 45;
+
+        function setCanvasSize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        setCanvasSize();
+        window.addEventListener('resize', setCanvasSize);
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 1;
+                this.speedX = (Math.random() - 0.5) * 0.4;
+                this.speedY = (Math.random() - 0.5) * 0.4;
+                this.color = '#10b981';
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                if (this.x > canvas.width) this.x = 0;
+                if (this.x < 0) this.x = canvas.width;
+                if (this.y > canvas.height) this.y = 0;
+                if (this.y < 0) this.y = canvas.height;
+            }
+
+            draw() {
+                ctx.fillStyle = this.color;
+                ctx.globalAlpha = 0.3;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function initParticles() {
+            particlesArray = [];
+            for (let i = 0; i < numberOfParticles; i++) {
+                particlesArray.push(new Particle());
+            }
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < particlesArray.length; i++) {
+                particlesArray[i].update();
+                particlesArray[i].draw();
+
+                // Connect particles with subtle lines
+                for (let j = i; j < particlesArray.length; j++) {
+                    const dx = particlesArray[i].x - particlesArray[j].x;
+                    const dy = particlesArray[i].y - particlesArray[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < 120) {
+                        ctx.beginPath();
+                        ctx.strokeStyle = '#10b981';
+                        ctx.globalAlpha = 0.05;
+                        ctx.lineWidth = 1;
+                        ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
+                        ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+            requestAnimationFrame(animateParticles);
+        }
+
+        window.onload = function () {
+            initParticles();
+            animateParticles();
+        };
+    </script>
+</body>
+</html>
