@@ -3,86 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>রাকিবুল ইসলাম | জীবনের গল্প ও পোর্টফোলিও (২০০৮ - ২০২৬)</title>
+    <title>বাংলাদেশ ইমার্জেন্সি সার্ভিস ডাইরেক্টরি | জরুরি সেবা ও যোগাযোগ</title>
+    <meta name="description" content="বাংলাদেশের সকল জরুরি সেবা, জাতীয় জরুরি সেবা ৯৯৯, ফায়ার সার্ভিস, অ্যাম্বুলেন্স, হাসপাতাল, পুলিশ স্টেশন ও ব্লাড ব্যাংকের সম্পূর্ণ ডাইরেক্টরি।">
+    <meta name="keywords" content="বাংলাদেশ ইমার্জেন্সি সার্ভিস, ৯৯৯, ফায়ার সার্ভিস নাম্বার, অ্যাম্বুলেন্স সেবা, জরুরি হাসপাতাল, Bangladesh Emergency Service">
     
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="রাকিবুল ইসলামের জীবন সফর, শিক্ষাগত যোগ্যতা, অ্যান্ড্রয়েড অ্যাপ ডেভেলপমেন্ট ও ওয়েব ডিজাইন দক্ষতা এবং পেশাগত জীবন (২০০৮-২০২৬)।">
-    <meta name="keywords" content="রাকিবুল ইসলাম, Rakibul Islam, Life History, Timeline, Web Designer, Android Developer, Banshkhali, Chittagong">
-    <meta name="author" content="Rakibul Islam">
-    <meta property="og:title" content="রাকিবুল ইসলাম | জীবনের গল্প ও পোর্টফোলিও">
-    <meta property="og:description" content="২০০৮ থেকে ২০২৬ পর্যন্ত রাকিবুল ইসলামের জীবনের নানা সাফল্যময় অধ্যায় ও দক্ষতার চিত্র।">
-    <meta property="og:type" content="website">
-
-    <!-- Tailwind CSS CDN -->
+    <!-- Google Fonts: Hind Siliguri & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <script>
         tailwind.config = {
-            darkMode: 'class',
             theme: {
                 extend: {
-                    colors: {
-                        emerald: {
-                            400: '#34d399',
-                            500: '#10b981',
-                            600: '#059669',
-                            900: '#064e3b',
-                        },
-                        darkBg: '#0f172a',
-                        cardBg: 'rgba(30, 41, 59, 0.7)',
-                    },
                     fontFamily: {
-                        sans: ['Kalpurush', 'Hind Siliguri', 'Inter', 'sans-serif'],
+                        sans: ['"Hind Siliguri"', 'Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        emergency: {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                            900: '#7f1d1d',
+                        },
+                        darkbg: '#0f172a',
+                        cardbg: '#1e293b'
+                    },
+                    animation: {
+                        'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-6px)' },
+                        }
                     }
                 }
             }
         }
     </script>
-    
-    <!-- Google Fonts for Bengali -->
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         body {
             font-family: 'Hind Siliguri', sans-serif;
-            background-color: #0b1120;
-            color: #f1f5f9;
-            overflow-x: hidden;
+            scroll-behavior: smooth;
         }
-
-        /* Glassmorphism styling */
-        .glass-card {
-            background: rgba(30, 41, 59, 0.65);
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.88);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
-
-        .glass-nav {
-            background: rgba(15, 23, 42, 0.85);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #991b1b 0%, #0f172a 45%, #020617 100%);
         }
-
-        /* Gradient Glow Effects */
-        .glow-emerald {
-            box-shadow: 0 0 25px rgba(16, 185, 129, 0.3);
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
-        /* Animated Canvas background position */
-        #bgCanvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            pointer-events: none;
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
         }
-
-        /* Custom scrollbar */
+        .sos-glow {
+            box-shadow: 0 0 25px rgba(220, 38, 38, 0.6);
+        }
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -90,721 +84,906 @@
             background: #0f172a;
         }
         ::-webkit-scrollbar-thumb {
-            background: #059669;
+            background: #334155;
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #10b981;
-        }
-
-        /* Timeline Connector line animation */
-        .timeline-line {
-            background: linear-gradient(180deg, #10b981 0%, #3b82f6 50%, #8b5cf6 100%);
+            background: #dc2626;
         }
     </style>
 </head>
-<body class="antialiased selection:bg-emerald-500 selection:text-white">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-red-600 selection:text-white">
 
-    <!-- Interactive Background Canvas -->
-    <canvas id="bgCanvas"></canvas>
-
-    <!-- Navigation Header -->
-    <header class="fixed top-0 left-0 w-full z-50 glass-nav transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#hero" class="flex items-center space-x-3 text-2xl font-bold tracking-tight text-white">
-                <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-300 flex items-center justify-center text-slate-900 shadow-lg font-black text-xl">রা</span>
-                <span class="bg-gradient-to-r from-emerald-400 to-teal-200 bg-clip-text text-transparent">রাকিবুল ইসলাম</span>
-            </a>
-
-            <!-- Desktop Navigation Links -->
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
-                <a href="#about" class="hover:text-emerald-400 transition-colors">আমার সম্পর্কে</a>
-                <a href="#timeline" class="hover:text-emerald-400 transition-colors">জীবন সফর (২০০৮-২০২৬)</a>
-                <a href="#skills" class="hover:text-emerald-400 transition-colors">দক্ষতা</a>
-                <a href="#education" class="hover:text-emerald-400 transition-colors">শিক্ষা ও কাজ</a>
-                <a href="#certificates" class="hover:text-emerald-400 transition-colors">সার্টিফিকেট</a>
-            </nav>
-
-            <!-- Action Button -->
-            <div class="hidden md:block">
-                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-medium shadow-lg hover:shadow-emerald-500/25 transition-all transform hover:-translate-y-0.5">
-                    যোগাযোগ করুন
-                </a>
+    <!-- Top Emergency Ticker -->
+    <div class="bg-red-700 text-white text-sm py-1.5 px-4 font-medium overflow-hidden relative z-50">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-white text-red-700 animate-pulse">LIVE 24/7</span>
+                <span>যেকোনো জরুরি প্রয়োজনে কল করুন জাতীয় জরুরি সেবা <a href="tel:999" class="underline font-bold hover:text-yellow-300">৯৯৯ (টোল ফ্রি)</a></span>
             </div>
+            <div class="hidden md:flex items-center gap-4 text-xs text-red-100">
+                <span><i class="fa-solid fa-fire-extinguisher mr-1"></i> ফায়ার সার্ভিস: ১৬১৬৩</span>
+                <span><i class="fa-solid fa-heart-pulse mr-1"></i> স্বাস্থ্য বাতায়ন: ১৬২৬৩</span>
+                <span><i class="fa-solid fa-hand-holding-heart mr-1"></i> নারী ও শিশু: ১০৯</span>
+            </div>
+        </div>
+    </div>
 
-            <!-- Mobile Menu Toggle Button -->
-            <button id="mobileMenuBtn" class="md:hidden text-gray-300 hover:text-white focus:outline-none p-2">
-                <i class="fa-solid fa-bars text-2xl"></i>
-            </button>
+    <!-- Navigation Bar -->
+    <nav class="glass-nav sticky top-0 z-40 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-truck-medical text-xl text-white"></i>
+                    </div>
+                    <div>
+                        <span class="font-bold text-lg sm:text-xl tracking-tight block leading-none">BD Emergency</span>
+                        <span class="text-xs text-slate-300 font-normal">বাংলাদেশ ইমার্জেন্সি ডাইরেক্টরি</span>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-1 lg:space-x-2">
+                    <a href="#hotlines" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:text-white hover:bg-slate-800 transition">জাতীয় হটলাইন</a>
+                    <a href="#directory" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:text-white hover:bg-slate-800 transition">সার্ভিস ডাইরেক্টরি</a>
+                    <a href="#first-aid" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:text-white hover:bg-slate-800 transition">প্রাথমিক চিকিৎসা</a>
+                    <a href="#faq" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:text-white hover:bg-slate-800 transition">নির্দেশিকা</a>
+                    <a href="#developer-about" class="px-3 py-2 rounded-lg text-sm font-medium text-emerald-400 hover:text-white hover:bg-slate-800 transition">ডেভেলপার পরিচিতি</a>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <a href="tel:999" class="bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2 rounded-full text-sm flex items-center gap-2 shadow-lg sos-glow transition transform active:scale-95">
+                        <i class="fa-solid fa-phone-volume animate-bounce"></i>
+                        <span>কল ৯৯৯</span>
+                    </a>
+                    <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
         </div>
 
-        <!-- Mobile Dropdown Navigation -->
-        <div id="mobileMenu" class="hidden md:hidden glass-card border-t border-slate-700/50 px-4 pt-2 pb-6 space-y-3">
-            <a href="#about" class="block py-2 text-gray-300 hover:text-emerald-400 font-medium">আমার সম্পর্কে</a>
-            <a href="#timeline" class="block py-2 text-gray-300 hover:text-emerald-400 font-medium">জীবন সফর (২০০৮-২০২৬)</a>
-            <a href="#skills" class="block py-2 text-gray-300 hover:text-emerald-400 font-medium">দক্ষতা</a>
-            <a href="#education" class="block py-2 text-gray-300 hover:text-emerald-400 font-medium">শিক্ষা ও কাজ</a>
-            <a href="#certificates" class="block py-2 text-gray-300 hover:text-emerald-400 font-medium">সার্টিফিকেট</a>
-            <a href="#contact" class="inline-block mt-2 w-full text-center py-2.5 rounded-xl bg-emerald-500 text-white font-medium">যোগাযোগ করুন</a>
+        <div id="mobileMenu" class="hidden md:hidden bg-slate-900 border-t border-slate-800 px-4 pt-2 pb-4 space-y-1">
+            <a href="#hotlines" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800">জাতীয় হটলাইন</a>
+            <a href="#directory" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800">সার্ভিস ডাইরেক্টরি</a>
+            <a href="#first-aid" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800">প্রাথমিক চিকিৎসা</a>
+            <a href="#faq" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800">নির্দেশিকা</a>
+            <a href="#developer-about" class="block px-3 py-2 rounded-lg text-base font-medium text-emerald-400 hover:bg-slate-800">ডেভেলপার পরিচিতি ও যোগাযোগ</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient text-white relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-60"></div>
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-red-600/20 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-500/15 border border-red-500/30 text-red-300 text-sm font-medium mb-6">
+                        <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+                        <span>সারাদেশের সকল জরুরি সেবা এখন এক প্ল্যাটফর্মে</span>
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6">
+                        বাংলাদেশ <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-red-500 to-orange-400">ইমার্জেন্সি সার্ভিস</span> ডাইরেক্টরি
+                    </h1>
+                    
+                    <p class="text-slate-300 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+                        বিপদের মুহূর্তে সঠিক নম্বর খুঁজে পেতে আর দেরি নয়। ফায়ার সার্ভিস, অ্যাম্বুলেন্স, হাসপাতাল, পুলিশ স্টেশন ও জরুরি হেল্পলাইনের ভেরিফায়েড নম্বর এবং সরাসরি কল করার সুবিধা।
+                    </p>
+
+                    <div class="max-w-xl mx-auto lg:mx-0 bg-white/10 backdrop-blur-md p-2 rounded-2xl border border-white/15 shadow-2xl flex flex-col sm:flex-row gap-2">
+                        <div class="relative flex-1">
+                            <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                            <input type="text" id="heroSearchInput" placeholder="জেলা, হাসপাতাল, ফায়ার সার্ভিস বা সেবা লিখুন..." 
+                                class="w-full bg-slate-900/80 text-white placeholder-slate-400 pl-11 pr-4 py-3.5 rounded-xl border border-slate-700/80 focus:outline-none focus:border-red-500 text-sm sm:text-base">
+                        </div>
+                        <button onclick="scrollToDirectory()" class="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3.5 rounded-xl transition flex items-center justify-center gap-2 shadow-lg">
+                            <span>খুঁজুন</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 mt-10 pt-8 border-t border-white/10">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white">২৪/৭</div>
+                            <div class="text-xs sm:text-sm text-slate-400">সক্রিয় জরুরি সেবা</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-red-400">৮ বিভাগ</div>
+                            <div class="text-xs sm:text-sm text-slate-400">সারাদেশের কভারেজ</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-emerald-400">১ ক্লিকে</div>
+                            <div class="text-xs sm:text-sm text-slate-400">সরাসরি কল ও কপি</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side SOS Action Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-slate-900/90 border border-slate-700/80 rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-red-600/10 rounded-bl-full"></div>
+                        
+                        <div class="flex items-center justify-between mb-6">
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-wider text-red-400">তাৎক্ষণিক সাহায্য</span>
+                                <h2 class="text-2xl font-bold text-white mt-0.5">জরুরি এসওএস (SOS)</h2>
+                            </div>
+                            <div class="w-12 h-12 rounded-2xl bg-red-600/20 border border-red-500/30 flex items-center justify-center text-red-500 animate-float">
+                                <i class="fa-solid fa-shield-heart text-2xl"></i>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <a href="tel:999" class="flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white transition group shadow-lg">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center font-extrabold text-xl">
+                                        ৯৯৯
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-lg">জাতীয় জরুরি সেবা</div>
+                                        <div class="text-xs text-red-100">পুলিশ, ফায়ার সার্ভিস ও অ্যাম্বুলেন্স</div>
+                                    </div>
+                                </div>
+                                <div class="w-10 h-10 rounded-full bg-white text-red-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                            </a>
+
+                            <a href="tel:16163" class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700 transition group">
+                                <div class="flex items-center gap-3.5">
+                                    <div class="w-11 h-11 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center text-lg">
+                                        <i class="fa-solid fa-fire-flame-curved"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-white">ফায়ার সার্ভিস হটলাইন</div>
+                                        <div class="text-xs text-slate-400">অগ্নিকাণ্ড ও উদ্ধার অভিযান • ১৬১৬৩</div>
+                                    </div>
+                                </div>
+                                <span class="px-3 py-1.5 rounded-lg bg-orange-500/20 text-orange-300 text-sm font-bold group-hover:bg-orange-500 group-hover:text-white transition">কল করুন</span>
+                            </a>
+
+                            <a href="tel:16263" class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700 transition group">
+                                <div class="flex items-center gap-3.5">
+                                    <div class="w-11 h-11 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg">
+                                        <i class="fa-solid fa-stethoscope"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-white">স্বাস্থ্য বাতায়ন (চিকিৎসা)</div>
+                                        <div class="text-xs text-slate-400">২৪ ঘণ্টা ডাক্তারের পরামর্শ • ১৬২৬৩</div>
+                                    </div>
+                                </div>
+                                <span class="px-3 py-1.5 rounded-lg bg-emerald-500/20 text-emerald-300 text-sm font-bold group-hover:bg-emerald-500 group-hover:text-white transition">কল করুন</span>
+                            </a>
+
+                            <a href="tel:109" class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700 transition group">
+                                <div class="flex items-center gap-3.5">
+                                    <div class="w-11 h-11 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-lg">
+                                        <i class="fa-solid fa-hands-holding-child"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-white">নারী ও শিশু নির্যাতন প্রতিরোধ</div>
+                                        <div class="text-xs text-slate-400">জাতীয় হেল্পলাইন সেন্টার • ১০৯</div>
+                                    </div>
+                                </div>
+                                <span class="px-3 py-1.5 rounded-lg bg-purple-500/20 text-purple-300 text-sm font-bold group-hover:bg-purple-500 group-hover:text-white transition">কল করুন</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Main Content Area -->
-    <main class="pt-24">
-
-        <!-- Hero Section -->
-        <section id="hero" class="min-h-[88vh] flex items-center justify-center relative px-4 sm:px-6 lg:px-8 py-12">
-            <div class="max-w-5xl mx-auto text-center">
-                <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full glass-card text-emerald-400 text-sm font-medium mb-8 animate-bounce">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                    <span>স্বাগতম আমার ব্যক্তিগত ডিজিটাল লাইফ স্টোরিতে</span>
-                </div>
-                
-                <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
-                    আমি <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">রাকিবুল ইসলাম</span>
-                </h1>
-                
-                <p class="text-lg sm:text-2xl text-slate-300 max-w-3xl mx-auto mb-10 font-normal leading-relaxed">
-                    অ্যান্ড্রয়েড মোবাইল অ্যাপ ডেভেলপার, ওয়েব ডিজাইনার এবং ইসলামিক স্টাডিজের একজন উদ্যমী ও বহুমুখী প্রতিভাধর শিক্ষার্থী।
-                </p>
-
-                <!-- Key Quick Info Pill Badges -->
-                <div class="flex flex-wrap justify-center gap-3 mb-12">
-                    <span class="glass-card px-4 py-2 rounded-xl text-sm font-medium text-slate-300 flex items-center gap-2">
-                        <i class="fa-solid fa-cake-candles text-emerald-400"></i> ২০ আগস্ট ২০০৮
-                    </span>
-                    <span class="glass-card px-4 py-2 rounded-xl text-sm font-medium text-slate-300 flex items-center gap-2">
-                        <i class="fa-solid fa-location-dot text-emerald-400"></i> বাঁশখালী, চট্টগ্রাম
-                    </span>
-                    <span class="glass-card px-4 py-2 rounded-xl text-sm font-medium text-slate-300 flex items-center gap-2">
-                        <i class="fa-solid fa-laptop-code text-emerald-400"></i> অ্যাপস ও ওয়েব ডেভেলপার
-                    </span>
-                    <span class="glass-card px-4 py-2 rounded-xl text-sm font-medium text-slate-300 flex items-center gap-2">
-                        <i class="fa-solid fa-book-quran text-emerald-400"></i> ইসলামিক স্টাডিজ
-                    </span>
-                </div>
-
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="#timeline" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-semibold shadow-xl hover:shadow-emerald-500/30 transition-all transform hover:-translate-y-1">
-                        জীবন সফর দেখুন <i class="fa-solid fa-arrow-down ml-2"></i>
-                    </a>
-                    <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-2xl glass-card hover:bg-slate-800/80 text-white font-semibold transition-all">
-                        বিস্তারিত পরিচিতি
-                    </a>
-                </div>
+    <!-- National Hotlines Section -->
+    <section id="hotlines" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-red-600 font-bold text-sm tracking-wider uppercase">জাতীয় হেল্পলাইন</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-1">সরকারি জরুরি হটলাইন নম্বরসমূহ</h2>
+                <p class="text-slate-600 mt-3">বাংলাদেশ সরকারের গুরুত্বপূর্ণ টোল-ফ্রি এবং শর্টকোড জরুরি সেবাসমূহ। যেকোনো কার্ডে ক্লিক করে সরাসরি কল করুন।</p>
             </div>
-        </section>
 
-        <!-- Stats Overview Counter Bar -->
-        <section class="py-10 border-y border-slate-800/80 bg-slate-900/40 backdrop-blur-md">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                    <div class="p-4 rounded-2xl glass-card">
-                        <div class="text-3xl md:text-4xl font-extrabold text-emerald-400 mb-1" id="statAge">১৮</div>
-                        <div class="text-xs sm:text-sm text-slate-400 font-medium">বছর বয়স (২০০৮ - ২০২৬)</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-red-100 text-red-600 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <span class="text-2xl font-extrabold text-red-600">৯৯৯</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">জাতীয় জরুরি সেবা</h3>
+                        <p class="text-sm text-slate-600 mt-1">জরুরি পুলিশ, ফায়ার সার্ভিস ও অ্যাম্বুলেন্স সহায়তার জন্য টোল-ফ্রি নম্বর।</p>
                     </div>
-                    <div class="p-4 rounded-2xl glass-card">
-                        <div class="text-3xl md:text-4xl font-extrabold text-teal-400 mb-1">৫+</div>
-                        <div class="text-xs sm:text-sm text-slate-400 font-medium">শিক্ষাগত ডিগ্রি/সনদ</div>
-                    </div>
-                    <div class="p-4 rounded-2xl glass-card">
-                        <div class="text-3xl md:text-4xl font-extrabold text-cyan-400 mb-1">২টি</div>
-                        <div class="text-xs sm:text-sm text-slate-400 font-medium">আন্তর্জাতিক সার্টিফিকেট</div>
-                    </div>
-                    <div class="p-4 rounded-2xl glass-card">
-                        <div class="text-3xl md:text-4xl font-extrabold text-emerald-400 mb-1">১+</div>
-                        <div class="text-xs sm:text-sm text-slate-400 font-medium">পেশাগত অভিজ্ঞতা বছর</div>
+                    <div class="mt-5 pt-4 border-t border-slate-200 flex gap-2">
+                        <a href="tel:999" class="flex-1 bg-red-600 hover:bg-red-700 text-white text-center py-2 rounded-xl font-semibold text-sm transition"><i class="fa-solid fa-phone mr-1"></i> কল করুন</a>
+                        <button onclick="copyNumber('999')" class="px-3 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-xl text-sm transition" title="নম্বর কপি করুন"><i class="fa-regular fa-copy"></i></button>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- About & Personal Info Section -->
-        <section id="about" class="py-20 relative">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">ব্যক্তিগত পরিচয় ও জীবন বৃত্তান্ত</h2>
-                    <div class="w-20 h-1.5 bg-emerald-500 mx-auto rounded-full"></div>
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+                            <span class="text-2xl font-extrabold text-blue-600">৩৩৩</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">সরকারি তথ্য ও সেবা</h3>
+                        <p class="text-sm text-slate-600 mt-1">সরকারি যেকোনো সেবা, কর্মকর্তাদের তথ্য ও সামাজিক সমস্যা সমাধানে।</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-200 flex gap-2">
+                        <a href="tel:333" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center py-2 rounded-xl font-semibold text-sm transition"><i class="fa-solid fa-phone mr-1"></i> কল করুন</a>
+                        <button onclick="copyNumber('333')" class="px-3 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-xl text-sm transition" title="নম্বর কপি করুন"><i class="fa-regular fa-copy"></i></button>
+                    </div>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
-                    <!-- Bio Card -->
-                    <div class="lg:col-span-2 glass-card p-8 rounded-3xl flex flex-col justify-between">
-                        <div>
-                            <h3 class="text-2xl font-bold text-emerald-400 mb-4 flex items-center gap-3">
-                                <i class="fa-solid fa-user-gear"></i> সংক্ষিপ্ত পরিচিতি
-                            </h3>
-                            <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-6">
-                                আমি একজন উদ্যমী, দক্ষ এবং বহুমুখী প্রতিভাধর ব্যক্তি। সাধারণ শিক্ষা ও মাদরাসা শিক্ষার শক্ত ভিত্তির পাশাপাশি আইসিটি এবং শিক্ষাদান ও প্রাতিষ্ঠানিক কাজের বাস্তব অভিজ্ঞতা আমার রয়েছে। মোবাইল অ্যাপ ডেভেলপমেন্ট ও ওয়েবসাইটের আকর্ষণীয় ডিজাইন তৈরিতে আমি সর্বদা আগ্রহী।
-                            </p>
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-fire-extinguisher"></i>
+                            </div>
+                            <span class="text-2xl font-extrabold text-orange-600">১৬১৬৩</span>
                         </div>
-
-                        <!-- Personal Details Grid -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6 border-t border-slate-700/60">
-                            <div class="flex items-center space-x-3">
-                                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400">
-                                    <i class="fa-solid fa-user"></i>
-                                </div>
-                                <div>
-                                    <p class="text-xs text-slate-400">পিতার নাম</p>
-                                    <p class="font-medium text-slate-200">আবুল বশর</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-center space-x-3">
-                                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400">
-                                    <i class="fa-solid fa-heart"></i>
-                                </div>
-                                <div>
-                                    <p class="text-xs text-slate-400">মাতার নাম</p>
-                                    <p class="font-medium text-slate-200">ছুনিয়া বেগম</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-center space-x-3">
-                                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400">
-                                    <i class="fa-solid fa-house-chimney"></i>
-                                </div>
-                                <div>
-                                    <p class="text-xs text-slate-400">স্থায়ী ঠিকানা</p>
-                                    <p class="font-medium text-slate-200">গন্দমারা, ০১ নং ওয়ার্ড, বাঁশখালী, চট্টগ্রাম</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-center space-x-3">
-                                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400">
-                                    <i class="fa-solid fa-flag"></i>
-                                </div>
-                                <div>
-                                    <p class="text-xs text-slate-400">জাতীয়তা ও ধর্ম</p>
-                                    <p class="font-medium text-slate-200">বাংলাদেশি (ইসলাম)</p>
-                                </div>
-                            </div>
-                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">ফায়ার সার্ভিস ও সিভিল ডিফেন্স</h3>
+                        <p class="text-sm text-slate-600 mt-1">আগুন লাগলে, ভবন ধস বা যেকোনো দুর্ঘটনায় উদ্ধারকাজের জন্য।</p>
                     </div>
+                    <div class="mt-5 pt-4 border-t border-slate-200 flex gap-2">
+                        <a href="tel:16163" class="flex-1 bg-orange-600 hover:bg-orange-700 text-white text-center py-2 rounded-xl font-semibold text-sm transition"><i class="fa-solid fa-phone mr-1"></i> কল করুন</a>
+                        <button onclick="copyNumber('16163')" class="px-3 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-xl text-sm transition" title="নম্বর কপি করুন"><i class="fa-regular fa-copy"></i></button>
+                    </div>
+                </div>
 
-                    <!-- Languages & Quick Info -->
-                    <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
-                        <div>
-                            <h3 class="text-2xl font-bold text-emerald-400 mb-6 flex items-center gap-3">
-                                <i class="fa-solid fa-language"></i> ভাষাগত দক্ষতা
-                            </h3>
-                            
-                            <div class="space-y-5">
-                                <div>
-                                    <div class="flex justify-between text-sm font-medium mb-1">
-                                        <span>বাংলা (মাতৃভাষা)</span>
-                                        <span class="text-emerald-400">১০০%</span>
-                                    </div>
-                                    <div class="w-full h-2 bg-slate-700 rounded-full overflow-hidden">
-                                        <div class="h-full bg-emerald-500 rounded-full w-[100%]"></div>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <div class="flex justify-between text-sm font-medium mb-1">
-                                        <span>আরবি (ইসলামিক স্টাডিজ)</span>
-                                        <span class="text-teal-400">৮৫%</span>
-                                    </div>
-                                    <div class="w-full h-2 bg-slate-700 rounded-full overflow-hidden">
-                                        <div class="h-full bg-teal-400 rounded-full w-[85%]"></div>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <div class="flex justify-between text-sm font-medium mb-1">
-                                        <span>ইংরেজি (পেশাগত ও হেলথকেয়ার)</span>
-                                        <span class="text-cyan-400">৯০%</span>
-                                    </div>
-                                    <div class="w-full h-2 bg-slate-700 rounded-full overflow-hidden">
-                                        <div class="h-full bg-cyan-400 rounded-full w-[90%]"></div>
-                                    </div>
-                                </div>
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-user-doctor"></i>
                             </div>
+                            <span class="text-2xl font-extrabold text-emerald-600">১৬২৬৩</span>
                         </div>
+                        <h3 class="font-bold text-lg text-slate-900">স্বাস্থ্য বাতায়ন</h3>
+                        <p class="text-sm text-slate-600 mt-1">স্বাস্থ্য অধিদপ্তর পরিচালিত ২৪ ঘণ্টা চিকিৎসকের পরামর্শ ও অ্যাম্বুলেন্স তথ্য।</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-200 flex gap-2">
+                        <a href="tel:16263" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white text-center py-2 rounded-xl font-semibold text-sm transition"><i class="fa-solid fa-phone mr-1"></i> কল করুন</a>
+                        <button onclick="copyNumber('16263')" class="px-3 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-xl text-sm transition" title="নম্বর কপি করুন"><i class="fa-regular fa-copy"></i></button>
+                    </div>
+                </div>
 
-                        <div class="mt-8 pt-6 border-t border-slate-700/60">
-                            <div class="bg-emerald-950/40 border border-emerald-500/30 rounded-2xl p-4 text-center">
-                                <p class="text-xs text-emerald-300 mb-1">জন্ম নিবন্ধন নম্বর</p>
-                                <p class="font-mono text-sm tracking-wider text-emerald-400 font-bold">২০০৮-১৫line To৮৩১১১১০২৬</p>
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-person-dress"></i>
                             </div>
+                            <span class="text-2xl font-extrabold text-purple-600">১০৯</span>
                         </div>
+                        <h3 class="font-bold text-lg text-slate-900">নারী ও শিশু সহায়তা</h3>
+                        <p class="text-sm text-slate-600 mt-1">নারী ও শিশু নির্যাতন প্রতিরোধ এবং তাৎক্ষণিক আইনি ও পুলিশি সহায়তা।</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-200 flex gap-2">
+                        <a href="tel:109" class="flex-1 bg-purple-600 hover:bg-purple-700 text-white text-center py-2 rounded-xl font-semibold text-sm transition"><i class="fa-solid fa-phone mr-1"></i> কল করুন</a>
+                        <button onclick="copyNumber('109')" class="px-3 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-xl text-sm transition" title="নম্বর কপি করুন"><i class="fa-regular fa-copy"></i></button>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-600 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-child-reaching"></i>
+                            </div>
+                            <span class="text-2xl font-extrabold text-cyan-600">১০৯৮</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">চাইল্ড হেল্পলাইন</h3>
+                        <p class="text-sm text-slate-600 mt-1">বিপদাপন্ন ও সুবিধাবঞ্চিত শিশুদের সুরক্ষা ও জরুরি সহায়তায়।</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-200 flex gap-2">
+                        <a href="tel:1098" class="flex-1 bg-cyan-600 hover:bg-cyan-700 text-white text-center py-2 rounded-xl font-semibold text-sm transition"><i class="fa-solid fa-phone mr-1"></i> কল করুন</a>
+                        <button onclick="copyNumber('1098')" class="px-3 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-xl text-sm transition" title="নম্বর কপি করুন"><i class="fa-regular fa-copy"></i></button>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-cloud-showers-heavy"></i>
+                            </div>
+                            <span class="text-2xl font-extrabold text-amber-600">১০৯০</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">দুর্যোগের আগাম বার্তা</h3>
+                        <p class="text-sm text-slate-600 mt-1">ঘূর্ণিঝড়, বন্যা, বজ্রপাত ও আবহাওয়ার সর্বশেষ জরুরি সতর্কবার্তা জানতে।</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-200 flex gap-2">
+                        <a href="tel:1090" class="flex-1 bg-amber-600 hover:bg-amber-700 text-white text-center py-2 rounded-xl font-semibold text-sm transition"><i class="fa-solid fa-phone mr-1"></i> কল করুন</a>
+                        <button onclick="copyNumber('1090')" class="px-3 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-xl text-sm transition" title="নম্বর কপি করুন"><i class="fa-regular fa-copy"></i></button>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                            </div>
+                            <span class="text-2xl font-extrabold text-rose-600">১০৬</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">দুদক হটলাইন (অভিযোগ)</h3>
+                        <p class="text-sm text-slate-600 mt-1">দুর্নীতি ও অনিয়মের বিরুদ্ধে সরাসরি অভিযোগ জানানোর টোল-ফ্রি নম্বর।</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-200 flex gap-2">
+                        <a href="tel:106" class="flex-1 bg-rose-600 hover:bg-rose-700 text-white text-center py-2 rounded-xl font-semibold text-sm transition"><i class="fa-solid fa-phone mr-1"></i> কল করুন</a>
+                        <button onclick="copyNumber('106')" class="px-3 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-xl text-sm transition" title="নম্বর কপি করুন"><i class="fa-regular fa-copy"></i></button>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Chronological Life Timeline Section (2008 - 2026) -->
-        <section id="timeline" class="py-20 relative bg-slate-900/30">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <span class="text-emerald-400 text-sm font-semibold uppercase tracking-widest">জীবনের ধারাবাহিক ইতিহাস</span>
-                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-2 mb-4">লাইফ টাইমলাইন (২০০৮ - ২০২৬)</h2>
-                    <p class="text-slate-400 max-w-xl mx-auto">আমার জন্ম থেকে আজ পর্যন্ত প্রতিটি উল্লেখযোগ্য অর্জনের সময়রেখা</p>
-                    <div class="w-24 h-1.5 bg-gradient-to-r from-emerald-500 to-teal-400 mx-auto rounded-full mt-4"></div>
+    <!-- Main Interactive Emergency Directory Section -->
+    <section id="directory" class="py-16 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-red-600 font-bold text-sm tracking-wider uppercase">পূর্ণাঙ্গ ডাইরেক্টরি</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-1">জরুরি সেবা খুঁজুন</h2>
+                <p class="text-slate-600 mt-2">ক্যাটাগরি বা বিভাগ অনুযায়ী ফিল্টার করে আপনার কাঙ্ক্ষিত হাসপাতাল, ফায়ার সার্ভিস, অ্যাম্বুলেন্স বা ব্লাড ব্যাংক খুঁজে নিন।</p>
+            </div>
+
+            <!-- Filter & Search Controls -->
+            <div class="bg-white p-4 sm:p-6 rounded-3xl shadow-md border border-slate-200 mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+                    <div class="md:col-span-5 relative">
+                        <i class="fa-solid fa-search absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                        <input type="text" id="directorySearch" placeholder="প্রতিষ্ঠানের নাম, এলাকা বা নম্বর লিখুন..." 
+                            class="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-sm">
+                    </div>
+
+                    <div class="md:col-span-3">
+                        <select id="divisionFilter" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-red-500 text-sm font-medium text-slate-700">
+                            <option value="all">সকল বিভাগ (সারাদেশ)</option>
+                            <option value="ঢাকা">ঢাকা বিভাগ</option>
+                            <option value="চট্টগ্রাম">চট্টগ্রাম বিভাগ</option>
+                            <option value="রাজশাহী">রাজশাহী বিভাগ</option>
+                            <option value="খুলনা">খুলনা বিভাগ</option>
+                            <option value="সিলেট">সিলেট বিভাগ</option>
+                            <option value="বরিশাল">বরিশাল বিভাগ</option>
+                            <option value="রংপুর">রংপুর বিভাগ</option>
+                            <option value="ময়মনসিংহ">ময়মনসিংহ বিভাগ</option>
+                        </select>
+                    </div>
+
+                    <div class="md:col-span-4 flex items-center justify-end gap-2">
+                        <span id="resultCount" class="text-sm text-slate-500 font-medium mr-auto md:mr-2">মোট সেবা: ২৬টি</span>
+                        <button onclick="resetFilters()" class="px-4 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm transition flex items-center gap-2">
+                            <i class="fa-solid fa-rotate-right"></i> রিসেট
+                        </button>
+                    </div>
                 </div>
 
-                <div class="relative">
-                    <!-- Vertical Line -->
-                    <div class="hidden sm:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 timeline-line rounded-full"></div>
-                    <div class="sm:hidden absolute left-6 h-full w-1 timeline-line rounded-full"></div>
-
-                    <!-- Timeline Item 1: 2008 -->
-                    <div class="relative mb-12 sm:mb-16">
-                        <div class="flex flex-col sm:flex-row items-center">
-                            <div class="flex justify-start sm:justify-end w-full sm:w-1/2 pr-0 sm:pr-12 pl-14 sm:pl-0 mb-4 sm:mb-0">
-                                <div class="glass-card p-6 rounded-2xl border-l-4 border-emerald-500 w-full hover:scale-[1.02] transition-transform">
-                                    <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold mb-2">২০০৮ সাল</span>
-                                    <h3 class="text-xl font-bold text-white mb-1">শুভ জন্ম ও পৃথিবীর আলো দেখা</h3>
-                                    <p class="text-slate-300 text-sm">২০ আগস্ট ২০০৮ তারিখে চট্টগ্রাম জেলার বাঁশখালী উপজেলার গন্দমারা গ্রামে (০১ নং ওয়ার্ড) জন্মগ্রহণ করি।</p>
-                                </div>
-                            </div>
-                            <!-- Circle Marker -->
-                            <div class="absolute left-6 sm:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-emerald-500 text-slate-900 font-bold flex items-center justify-center shadow-lg shadow-emerald-500/50 z-10 border-4 border-slate-900">
-                                <i class="fa-solid fa-baby text-xs"></i>
-                            </div>
-                            <div class="w-full sm:w-1/2 pl-0 sm:pl-12"></div>
-                        </div>
-                    </div>
-
-                    <!-- Timeline Item 2: 2018 -->
-                    <div class="relative mb-12 sm:mb-16">
-                        <div class="flex flex-col sm:flex-row items-center">
-                            <div class="w-full sm:w-1/2 pr-0 sm:pr-12"></div>
-                            <!-- Circle Marker -->
-                            <div class="absolute left-6 sm:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-teal-400 text-slate-900 font-bold flex items-center justify-center shadow-lg shadow-teal-400/50 z-10 border-4 border-slate-900">
-                                <i class="fa-solid fa-graduation-cap text-xs"></i>
-                            </div>
-                            <div class="flex justify-start w-full sm:w-1/2 pl-14 sm:pl-12">
-                                <div class="glass-card p-6 rounded-2xl border-l-4 border-teal-400 w-full hover:scale-[1.02] transition-transform">
-                                    <span class="inline-block px-3 py-1 rounded-full bg-teal-400/20 text-teal-300 text-xs font-bold mb-2">২০১৮ সাল</span>
-                                    <h3 class="text-xl font-bold text-white mb-1">ইবতেদায়ী সমাপনী সাফল্য</h3>
-                                    <p class="text-slate-300 text-sm">পশ্চিম বাঁশখালী রহমানিয়া মাদরাসা থেকে প্রাতিষ্ঠানিক প্রাথমিক শিক্ষা সাফল্যের সাথে শেষ করি।</p>
-                                    <span class="inline-block mt-3 text-xs bg-slate-800 text-teal-300 font-semibold px-2.5 py-1 rounded-lg">জিপিএ: ৩.৭৫</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Timeline Item 3: 2021 -->
-                    <div class="relative mb-12 sm:mb-16">
-                        <div class="flex flex-col sm:flex-row items-center">
-                            <div class="flex justify-start sm:justify-end w-full sm:w-1/2 pr-0 sm:pr-12 pl-14 sm:pl-0 mb-4 sm:mb-0">
-                                <div class="glass-card p-6 rounded-2xl border-l-4 border-cyan-400 w-full hover:scale-[1.02] transition-transform">
-                                    <span class="inline-block px-3 py-1 rounded-full bg-cyan-400/20 text-cyan-300 text-xs font-bold mb-2">২০২১ সাল</span>
-                                    <h3 class="text-xl font-bold text-white mb-1">জেএসসি / সমমান পরীক্ষা পাশ</h3>
-                                    <p class="text-slate-300 text-sm">নাংলমোহরা ফাযিল মাদরাসা থেকে সাধারণ বিভাগে সফলতার সাথে জেএসসি বা সমমান পরীক্ষায় উত্তীর্ণ হই।</p>
-                                </div>
-                            </div>
-                            <!-- Circle Marker -->
-                            <div class="absolute left-6 sm:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-cyan-400 text-slate-900 font-bold flex items-center justify-center shadow-lg shadow-cyan-400/50 z-10 border-4 border-slate-900">
-                                <i class="fa-solid fa-award text-xs"></i>
-                            </div>
-                            <div class="w-full sm:w-1/2 pl-0 sm:pl-12"></div>
-                        </div>
-                    </div>
-
-                    <!-- Timeline Item 4: 2022 - 2023 -->
-                    <div class="relative mb-12 sm:mb-16">
-                        <div class="flex flex-col sm:flex-row items-center">
-                            <div class="w-full sm:w-1/2 pr-0 sm:pr-12"></div>
-                            <!-- Circle Marker -->
-                            <div class="absolute left-6 sm:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-emerald-400 text-slate-900 font-bold flex items-center justify-center shadow-lg shadow-emerald-400/50 z-10 border-4 border-slate-900">
-                                <i class="fa-solid fa-book-open text-xs"></i>
-                            </div>
-                            <div class="flex justify-start w-full sm:w-1/2 pl-14 sm:pl-12">
-                                <div class="glass-card p-6 rounded-2xl border-l-4 border-emerald-400 w-full hover:scale-[1.02] transition-transform">
-                                    <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold mb-2">২০২২ - ২০২৩ সাল</span>
-                                    <h3 class="text-xl font-bold text-white mb-1">এসএসসি / দাখিল সম্পন্ন</h3>
-                                    <p class="text-slate-300 text-sm">নাংলমোহরা ফাযিল মাদরাসা থেকে সাধারণ গ্রুপে দাখিল পরীক্ষায় কৃতিত্বের সাথে জিপিএ ৪.৫০ লাভ করি।</p>
-                                    <span class="inline-block mt-3 text-xs bg-slate-800 text-emerald-400 font-semibold px-2.5 py-1 rounded-lg">জিপিএ: ৪.৫০</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Timeline Item 5: 2024 - 2025 -->
-                    <div class="relative mb-12 sm:mb-16">
-                        <div class="flex flex-col sm:flex-row items-center">
-                            <div class="flex justify-start sm:justify-end w-full sm:w-1/2 pr-0 sm:pr-12 pl-14 sm:pl-0 mb-4 sm:mb-0">
-                                <div class="glass-card p-6 rounded-2xl border-l-4 border-blue-500 w-full hover:scale-[1.02] transition-transform">
-                                    <span class="inline-block px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-bold mb-2">২০২৪ - ২০২৫ সাল</span>
-                                    <h3 class="text-xl font-bold text-white mb-1">এইচএসসি / আলিম ও কিতাব বিভাগ</h3>
-                                    <p class="text-slate-300 text-sm">নাংলমোহরা ফাযিল মাদরাসা থেকে আলিম সম্পন্ন (জিপিএ ৩.৫০)। একই সময়ে জামিআতুল মদিনা থেকে কিতাব বিভাগ (৪র্থ বর্ষ) সম্পন্ন করি।</p>
-                                    <div class="flex gap-2 mt-3">
-                                        <span class="text-xs bg-slate-800 text-blue-400 font-semibold px-2.5 py-1 rounded-lg">আলিম জিপিএ: ৩.৫০</span>
-                                        <span class="text-xs bg-slate-800 text-blue-300 font-semibold px-2.5 py-1 rounded-lg">কিতাব বিভাগ সম্পন্ন</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Circle Marker -->
-                            <div class="absolute left-6 sm:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-blue-500 text-white font-bold flex items-center justify-center shadow-lg shadow-blue-500/50 z-10 border-4 border-slate-900">
-                                <i class="fa-solid fa-school text-xs"></i>
-                            </div>
-                            <div class="w-full sm:w-1/2 pl-0 sm:pl-12"></div>
-                        </div>
-                    </div>
-
-                    <!-- Timeline Item 6: 2025 - 2026 -->
-                    <div class="relative mb-12 sm:mb-16">
-                        <div class="flex flex-col sm:flex-row items-center">
-                            <div class="w-full sm:w-1/2 pr-0 sm:pr-12"></div>
-                            <!-- Circle Marker -->
-                            <div class="absolute left-6 sm:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-purple-500 text-white font-bold flex items-center justify-center shadow-lg shadow-purple-500/50 z-10 border-4 border-slate-900">
-                                <i class="fa-solid fa-chalkboard-user text-xs"></i>
-                            </div>
-                            <div class="flex justify-start w-full sm:w-1/2 pl-14 sm:pl-12">
-                                <div class="glass-card p-6 rounded-2xl border-l-4 border-purple-500 w-full hover:scale-[1.02] transition-transform">
-                                    <span class="inline-block px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 text-xs font-bold mb-2">২০২৫ - ২০২৬ সাল</span>
-                                    <h3 class="text-xl font-bold text-white mb-1">পেশাগত অভিজ্ঞতা (শিক্ষকতা)</h3>
-                                    <p class="text-slate-300 text-sm">পাউছিয়া তৈয়বিয়া তাহফীজুল কুরআন মডেল মাদরাসায় হিফজ ও নূরানী বিভাগের শিক্ষক হিসেবে সুনাম ও শৃঙ্খলার সাথে দায়িত্ব পালন করি।</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Timeline Item 7: 2026 (Present Tech Milestone) -->
-                    <div class="relative">
-                        <div class="flex flex-col sm:flex-row items-center">
-                            <div class="flex justify-start sm:justify-end w-full sm:w-1/2 pr-0 sm:pr-12 pl-14 sm:pl-0 mb-4 sm:mb-0">
-                                <div class="glass-card p-6 rounded-2xl border-l-4 border-emerald-400 w-full hover:scale-[1.02] transition-transform bg-gradient-to-br from-emerald-950/30 to-slate-900">
-                                    <span class="inline-block px-3 py-1 rounded-full bg-emerald-400/20 text-emerald-300 text-xs font-bold mb-2">২০২৬ সাল (বর্তমান)</span>
-                                    <h3 class="text-xl font-bold text-white mb-1">প্রযুক্তি ও আর্টিফিশিয়াল ইন্টেলিজেন্স সাফল্য</h3>
-                                    <p class="text-slate-300 text-sm">সেইলর একাডেমি থেকে AI এবং Healthcare English এর উপর প্রফেশনাল সার্টিফিকেট অর্জন এবং অ্যান্ড্রয়েড অ্যাপ ও ওয়েবল্যান্ডিং ডিজাইনে দক্ষতা অর্জন।</p>
-                                </div>
-                            </div>
-                            <!-- Circle Marker -->
-                            <div class="absolute left-6 sm:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-emerald-400 text-slate-900 font-bold flex items-center justify-center shadow-lg shadow-emerald-400/50 z-10 border-4 border-slate-900 animate-pulse">
-                                <i class="fa-solid fa-microchip text-xs"></i>
-                            </div>
-                            <div class="w-full sm:w-1/2 pl-0 sm:pl-12"></div>
-                        </div>
-                    </div>
+                <!-- Category Filter Pills -->
+                <div class="flex flex-wrap gap-2 mt-5 pt-4 border-t border-slate-100" id="categoryTabs">
+                    <button data-cat="all" class="cat-btn active px-4 py-2 rounded-full text-sm font-semibold bg-red-600 text-white shadow-sm transition">
+                        <i class="fa-solid fa-layer-group mr-1.5"></i> সব সেবা
+                    </button>
+                    <button data-cat="fire" class="cat-btn px-4 py-2 rounded-full text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                        <i class="fa-solid fa-fire-extinguisher text-orange-600 mr-1.5"></i> ফায়ার সার্ভিস
+                    </button>
+                    <button data-cat="ambulance" class="cat-btn px-4 py-2 rounded-full text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                        <i class="fa-solid fa-truck-medical text-red-600 mr-1.5"></i> অ্যাম্বুলেন্স
+                    </button>
+                    <button data-cat="hospital" class="cat-btn px-4 py-2 rounded-full text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                        <i class="fa-solid fa-hospital text-emerald-600 mr-1.5"></i> হাসপাতাল
+                    </button>
+                    <button data-cat="police" class="cat-btn px-4 py-2 rounded-full text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                        <i class="fa-solid fa-shield-halved text-blue-600 mr-1.5"></i> পুলিশ ও র‍্যাব
+                    </button>
+                    <button data-cat="blood" class="cat-btn px-4 py-2 rounded-full text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                        <i class="fa-solid fa-droplet text-rose-600 mr-1.5"></i> ব্লাড ব্যাংক
+                    </button>
                 </div>
             </div>
-        </section>
 
-        <!-- Technical & Professional Skills Section -->
-        <section id="skills" class="py-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">দক্ষতা ও পারদর্শিতা</h2>
-                    <p class="text-slate-400">প্রযুক্তি এবং ইসলামিক জ্ঞানের সমন্বয়ে অর্জিত দক্ষতা</p>
-                    <div class="w-20 h-1.5 bg-emerald-500 mx-auto rounded-full mt-4"></div>
+            <div id="directoryGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+            <div id="emptyState" class="hidden text-center py-16 bg-white rounded-3xl border border-slate-200">
+                <div class="w-16 h-16 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center mx-auto text-2xl mb-4">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-800">কোনো তথ্য পাওয়া যায়নি</h3>
+                <p class="text-slate-500 mt-1">অন্য কোনো নাম বা বিভাগ দিয়ে পুনরায় অনুসন্ধান করুন।</p>
+                <button onclick="resetFilters()" class="mt-4 px-5 py-2.5 bg-red-600 text-white rounded-xl font-semibold text-sm hover:bg-red-700 transition">সব সেবা দেখুন</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- First Aid & Emergency Preparedness Section -->
+    <section id="first-aid" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-red-600 font-bold text-sm tracking-wider uppercase">জীবন রক্ষাকারী টিপস</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-1">জরুরি অবস্থায় করণীয় (প্রাথমিক চিকিৎসা)</h2>
+                <p class="text-slate-600 mt-2">অ্যাম্বুলেন্স বা ফায়ার সার্ভিস পৌঁছানোর আগ মুহূর্তে সঠিক পদক্ষেপ একটি জীবন বাঁচাতে পারে।</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 rounded-2xl bg-orange-50/70 border border-orange-200">
+                    <div class="w-12 h-12 rounded-xl bg-orange-500 text-white flex items-center justify-center text-xl mb-4 shadow-md">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-slate-900 mb-2">আগুন লাগলে করণীয়</h3>
+                    <ul class="text-sm text-slate-700 space-y-2">
+                        <li><i class="fa-solid fa-check text-orange-600 mr-1.5"></i>আতঙ্কিত না হয়ে দ্রুত ভবন থেকে বের হয়ে আসুন।</li>
+                        <li><i class="fa-solid fa-check text-orange-600 mr-1.5"></i>লিফট ব্যবহার না করে সিঁড়ি ব্যবহার করুন।</li>
+                        <li><i class="fa-solid fa-check text-orange-600 mr-1.5"></i>ধোঁয়া বেশি হলে হামাগুড়ি দিয়ে নিচে নিচে চলুন।</li>
+                        <li><i class="fa-solid fa-check text-orange-600 mr-1.5"></i>নিরাপদ স্থানে গিয়ে ৯৯৯ বা ১৬১৬৩ নম্বরে কল দিন।</li>
+                    </ul>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- Skill 1 -->
-                    <div class="glass-card p-6 rounded-2xl hover:border-emerald-500/50 transition-all text-center group">
-                        <div class="w-16 h-16 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-3xl mx-auto mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-brands fa-android"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2">অ্যান্ড্রয়েড অ্যাপ ডেভেলপমেন্ট</h3>
-                        <p class="text-slate-400 text-sm">মোবাইল প্ল্যাটফর্মের জন্য ব্যবহারবান্ধব অ্যান্ড্রয়েড অ্যাপ্লিকেশন তৈরি।</p>
+                <div class="p-6 rounded-2xl bg-red-50/70 border border-red-200">
+                    <div class="w-12 h-12 rounded-xl bg-red-600 text-white flex items-center justify-center text-xl mb-4 shadow-md">
+                        <i class="fa-solid fa-heart-pulse"></i>
                     </div>
+                    <h3 class="font-bold text-xl text-slate-900 mb-2">হৃদরোগ বা হার্ট অ্যাটাক</h3>
+                    <ul class="text-sm text-slate-700 space-y-2">
+                        <li><i class="fa-solid fa-check text-red-600 mr-1.5"></i>রোগীকে শান্ত রাখুন এবং আরামদায়কভাবে বসান বা শুইয়ে দিন।</li>
+                        <li><i class="fa-solid fa-check text-red-600 mr-1.5"></i>গায়ের টাইট কাপড় বা কলার ঢিলা করে দিন।</li>
+                        <li><i class="fa-solid fa-check text-red-600 mr-1.5"></i>রোগী অজ্ঞান হলে এবং শ্বাস না নিলে সিপিআর (CPR) শুরু করুন।</li>
+                        <li><i class="fa-solid fa-check text-red-600 mr-1.5"></i>দ্রুত অ্যাম্বুলেন্স ডেকে নিকটস্থ হাসপাতালে নিন।</li>
+                    </ul>
+                </div>
 
-                    <!-- Skill 2 -->
-                    <div class="glass-card p-6 rounded-2xl hover:border-teal-400/50 transition-all text-center group">
-                        <div class="w-16 h-16 rounded-2xl bg-teal-400/10 text-teal-300 flex items-center justify-center text-3xl mx-auto mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2">ওয়েব ডিজাইন</h3>
-                        <p class="text-slate-400 text-sm">আধুনিক, রেসপন্সিভ এবং নান্দনিক ওয়েব লেআউট ডিজাইন করা।</p>
+                <div class="p-6 rounded-2xl bg-blue-50/70 border border-blue-200">
+                    <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl mb-4 shadow-md">
+                        <i class="fa-solid fa-bandage"></i>
                     </div>
+                    <h3 class="font-bold text-xl text-slate-900 mb-2">সড়ক দুর্ঘটনা ও রক্তপাত</h3>
+                    <ul class="text-sm text-slate-700 space-y-2">
+                        <li><i class="fa-solid fa-check text-blue-600 mr-1.5"></i>পরিষ্কার কাপড় বা গজ দিয়ে ক্ষতস্থানে চেপে ধরুন।</li>
+                        <li><i class="fa-solid fa-check text-blue-600 mr-1.5"></i>ঘাড় বা মেরুদণ্ডে আঘাত সন্দেহ হলে রোগীকে ঝাঁকাবেন না।</li>
+                        <li><i class="fa-solid fa-check text-blue-600 mr-1.5"></i>দুর্ঘটনাস্থলে ভিড় না করে বাতাস চলাচলের ব্যবস্থা রাখুন।</li>
+                        <li><i class="fa-solid fa-check text-blue-600 mr-1.5"></i>পুলিশ ও অ্যাম্বুলেন্সকে সঠিক লোকেশন জানান।</li>
+                    </ul>
+                </div>
 
-                    <!-- Skill 3 -->
-                    <div class="glass-card p-6 rounded-2xl hover:border-cyan-400/50 transition-all text-center group">
-                        <div class="w-16 h-16 rounded-2xl bg-cyan-400/10 text-cyan-300 flex items-center justify-center text-3xl mx-auto mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-robot"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2">কৃত্রিম বুদ্ধিমত্তা (AI)</h3>
-                        <p class="text-slate-400 text-sm">AI টুলস ও প্রযুক্তি ব্যবহার করে কাজের গতি ও দক্ষতা বৃদ্ধি।</p>
+                <div class="p-6 rounded-2xl bg-emerald-50/70 border border-emerald-200">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl mb-4 shadow-md">
+                        <i class="fa-solid fa-bolt"></i>
                     </div>
-
-                    <!-- Skill 4 -->
-                    <div class="glass-card p-6 rounded-2xl hover:border-purple-400/50 transition-all text-center group">
-                        <div class="w-16 h-16 rounded-2xl bg-purple-400/10 text-purple-300 flex items-center justify-center text-3xl mx-auto mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-book-quran"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2">ইসলামিক স্টাডিজ</h3>
-                        <p class="text-slate-400 text-sm">মাদরাসা শিক্ষার উচ্চতর অভিজ্ঞতা ও ইসলামিক শিক্ষকতা।</p>
-                    </div>
+                    <h3 class="font-bold text-xl text-slate-900 mb-2">বিদ্যুৎস্পৃষ্ট হলে</h3>
+                    <ul class="text-sm text-slate-700 space-y-2">
+                        <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i>খালি হাতে আক্রান্ত ব্যক্তিকে স্পর্শ করবেন না।</li>
+                        <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i>প্রথমেই মেইন সুইচ বন্ধ করুন বা শুকনো কাঠ দিয়ে তার সরান।</li>
+                        <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i>আক্রান্ত ব্যক্তির শ্বাস-প্রশ্বাস ও পালস পরীক্ষা করুন।</li>
+                        <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i>পোড়া স্থানে ঠান্ডা পানি ঢালুন এবং হাসপাতালে নিন।</li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Education & Work Experience Tables -->
-        <section id="education" class="py-20 bg-slate-900/40">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                
-                <!-- Education Table -->
-                <div class="mb-16">
-                    <div class="flex items-center gap-3 mb-8">
-                        <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                        </div>
-                        <h2 class="text-2xl sm:text-3xl font-bold text-white">শিক্ষাগত যোগ্যতার বিবরণী</h2>
-                    </div>
+    <!-- FAQ / Guidelines Section -->
+    <section id="faq" class="py-16 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-red-400 font-bold text-sm tracking-wider uppercase">সচরাচর জিজ্ঞাসিত প্রশ্ন</span>
+                <h2 class="text-3xl font-bold mt-1">জরুরি কল করার সঠিক নিয়মাবলি</h2>
+            </div>
 
-                    <div class="overflow-x-auto glass-card rounded-2xl border border-slate-700/60">
-                        <table class="w-full text-left text-sm sm:text-base">
-                            <thead class="bg-slate-800/80 text-emerald-400 uppercase text-xs sm:text-sm font-semibold tracking-wider">
-                                <tr>
-                                    <th class="p-4 sm:p-5">ডিগ্রী/পরীক্ষা</th>
-                                    <th class="p-4 sm:p-5">বিভাগ/গ্রুপ</th>
-                                    <th class="p-4 sm:p-5">শিক্ষা প্রতিষ্ঠান</th>
-                                    <th class="p-4 sm:p-5">বোর্ড/সেশন</th>
-                                    <th class="p-4 sm:p-5">ফলাফল</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-slate-700/50 text-slate-300">
-                                <tr class="hover:bg-slate-800/40 transition-colors">
-                                    <td class="p-4 sm:p-5 font-semibold text-white">কিতাব বিভাগ (৪র্থ বর্ষ)</td>
-                                    <td class="p-4 sm:p-5">মাদরাসা</td>
-                                    <td class="p-4 sm:p-5">জামিআতুল মদিনা</td>
-                                    <td class="p-4 sm:p-5">বিশেষ মাদরাসা</td>
-                                    <td class="p-4 sm:p-5"><span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-400">সম্পন্ন</span></td>
-                                </tr>
-                                <tr class="hover:bg-slate-800/40 transition-colors">
-                                    <td class="p-4 sm:p-5 font-semibold text-white">আলিম (এইচএসসি)</td>
-                                    <td class="p-4 sm:p-5">জেনারেল</td>
-                                    <td class="p-4 sm:p-5">নাংলমোহরা ফাযিল মাদরাসা</td>
-                                    <td class="p-4 sm:p-5">মাদরাসা (২০২৪-২৫)</td>
-                                    <td class="p-4 sm:p-5"><span class="px-3 py-1 rounded-full text-xs font-semibold bg-teal-500/20 text-teal-300">GPA: ৩.৫০</span></td>
-                                </tr>
-                                <tr class="hover:bg-slate-800/40 transition-colors">
-                                    <td class="p-4 sm:p-5 font-semibold text-white">দাখিল (এসএসসি)</td>
-                                    <td class="p-4 sm:p-5">জেনারেল</td>
-                                    <td class="p-4 sm:p-5">নাংলমোহরা ফাযিল মাদরাসা</td>
-                                    <td class="p-4 sm:p-5">মাদরাসা (২০২২-২৩)</td>
-                                    <td class="p-4 sm:p-5"><span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-400">GPA: ৪.৫০</span></td>
-                                </tr>
-                                <tr class="hover:bg-slate-800/40 transition-colors">
-                                    <td class="p-4 sm:p-5 font-semibold text-white">জেএসসি বা সমমান</td>
-                                    <td class="p-4 sm:p-5">সাধারণ</td>
-                                    <td class="p-4 sm:p-5">নাংলমোহরা ফাযিল মাদরাসা</td>
-                                    <td class="p-4 sm:p-5">মাদরাসা (২০২১)</td>
-                                    <td class="p-4 sm:p-5"><span class="px-3 py-1 rounded-full text-xs font-semibold bg-cyan-500/20 text-cyan-300">উত্তীর্ণ</span></td>
-                                </tr>
-                                <tr class="hover:bg-slate-800/40 transition-colors">
-                                    <td class="p-4 sm:p-5 font-semibold text-white">ইবতেদায়ী সমাপনী</td>
-                                    <td class="p-4 sm:p-5">সাধারণ</td>
-                                    <td class="p-4 sm:p-5">পশ্চিম বাঁশখালী রহমানিয়া</td>
-                                    <td class="p-4 sm:p-5">প্রাথমিক শিক্ষা (২০১৮)</td>
-                                    <td class="p-4 sm:p-5"><span class="px-3 py-1 rounded-full text-xs font-semibold bg-teal-500/20 text-teal-300">GPA: ৩.৭৫</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+            <div class="space-y-4">
+                <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-5">
+                    <h3 class="font-bold text-lg text-red-400 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-question"></i> ৯৯৯-এ কল করলে কী কী তথ্য দিতে হয়?
+                    </h3>
+                    <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+                        কল রিসিভ হওয়ার পর শান্তভাবে আপনার নাম, ঘটনার ধরন (আগুন, দুর্ঘটনা, অপরাধ বা চিকিৎসা জরুরি), এবং ঘটনাস্থলের সুনির্দিষ্ট ঠিকানা (জেলা, থানা, রাস্তার নাম বা পরিচিত ল্যান্ডমার্ক) বলুন। অপারেটর সংযোগ বিচ্ছিন্ন করার আগে আপনি লাইন কাটবেন না।
+                    </p>
                 </div>
 
-                <!-- Work Experience Block -->
-                <div>
-                    <div class="flex items-center gap-3 mb-8">
-                        <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-xl">
-                            <i class="fa-solid fa-briefcase"></i>
-                        </div>
-                        <h2 class="text-2xl sm:text-3xl font-bold text-white">পেশাগত কাজের অভিজ্ঞতা</h2>
-                    </div>
+                <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-5">
+                    <h3 class="font-bold text-lg text-red-400 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-question"></i> মোবাইলে ব্যালেন্স না থাকলেও কি জরুরি নম্বরে কল করা যায়?
+                    </h3>
+                    <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+                        হ্যাঁ, বাংলাদেশের যেকোনো মোবাইল অপারেটর (গ্রামীণফোন, রবি, এয়ারটেল, বাংলালিংক ও টেলিটক) থেকে ব্যালেন্স শূন্য থাকলেও ৯৯৯, ১০৯, ১০৯৮ এবং ১০৬ নম্বরে সম্পূর্ণ বিনামূল্যে (টোল-ফ্রি) কল করা যায়।
+                    </p>
+                </div>
 
-                    <div class="glass-card p-6 sm:p-8 rounded-2xl border-l-4 border-purple-500">
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
-                            <div>
-                                <h3 class="text-xl font-bold text-white">শিক্ষক (হিফজ ও নূরানী বিভাগ)</h3>
-                                <p class="text-emerald-400 font-medium">পাউছিয়া তৈয়বিয়া তাহফীজুল কুরআন মডেল মাদরাসা</p>
-                            </div>
-                            <span class="mt-2 sm:mt-0 inline-block px-4 py-1.5 rounded-full bg-purple-500/20 text-purple-300 text-sm font-semibold w-fit">
-                                ২০২৫ - ২০২৬
-                            </span>
+                <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-5">
+                    <h3 class="font-bold text-lg text-red-400 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-question"></i> অ্যাম্বুলেন্স বুকিং করার সময় কী বিষয় খেয়াল রাখবেন?
+                    </h3>
+                    <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+                        রোগীর অবস্থা অনুযায়ী সাধারণ অ্যাম্বুলেন্স, অক্সিজেন সাপোর্ট অ্যাম্বুলেন্স নাকি আইসিইউ (ICU) অ্যাম্বুলেন্স প্রয়োজন তা আগেই স্পষ্ট করে বলুন এবং ভাড়া ও পৌঁছানোর সম্ভাব্য সময় নিশ্চিত হয়ে নিন।
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer & About Us Section -->
+    <section id="developer-about" class="py-16 bg-gradient-to-b from-slate-900 to-slate-950 text-white border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-emerald-400 font-bold text-sm tracking-wider uppercase">আমাদের সম্পর্কে ও যোগাযোগ</span>
+                <h2 class="text-3xl sm:text-4xl font-bold mt-1">প্ল্যাটফর্ম পরিচিতি ও ডেভেলপার তথ্য</h2>
+                <p class="text-slate-400 mt-2">নতুন কোন জরুরি সেবা যুক্ত করতে, তথ্য সংশোধন করতে অথবা ওয়েব ও মোবাইল অ্যাপ ডেভেলপমেন্টের জন্য সরাসরি যোগাযোগ করুন।</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                <!-- About Platform Card -->
+                <div class="lg:col-span-6 bg-slate-800/60 border border-slate-700/80 rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/15 border border-red-500/30 text-red-400 text-xs font-bold mb-4">
+                            <i class="fa-solid fa-heart-pulse"></i> জনকল্যাণমূলক ডিজিটাল উদ্যোগ
                         </div>
-                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-                            <i class="fa-solid fa-circle-check text-emerald-400 mr-2"></i> শিক্ষার্থীদের মেধা ও শৃঙ্খলার মান বজায় রেখে পরিচালনা করা, নিয়মিত ব্যক্তিগত উন্নতি পর্যবেক্ষণ এবং অভিভাবকদের নিকট নিয়মিত অগ্রগতির রিপোর্ট প্রদান করা।
+                        <h3 class="text-2xl font-bold text-white mb-4">আমাদের লক্ষ্য ও উদ্দেশ্য (About Us)</h3>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+                            <strong>বাংলাদেশ ইমার্জেন্সি সার্ভিস ডাইরেক্টরি</strong> একটি আধুনিক ও জনকল্যাণমূলক ডিজিটাল তথ্যসেবা প্ল্যাটফর্ম। বিপদের মুহূর্তে মানুষ যেন কোনো বিভ্রান্তি ছাড়াই এক ক্লিকে ফায়ার সার্ভিস, অ্যাম্বুলেন্স, হাসপাতাল, পুলিশ এবং ব্লাড ব্যাংকের সঠিক নম্বর খুঁজে পায় এবং সরাসরি কল করতে পারে—সেই লক্ষ্য নিয়েই এই প্ল্যাটফর্মটি তৈরি করা হয়েছে।
                         </p>
+                        <ul class="space-y-2.5 text-sm text-slate-300 mt-4">
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                <span>সারাদেশের ৮টি বিভাগের গুরুত্বপূর্ণ জরুরি সেবার নির্ভুল তথ্য</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                <span>মোবাইল ও ডেস্কটপ থেকে দ্রুত লোডিং এবং ১ ক্লিকে কল করার সুবিধা</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                <span>নিয়মিত নতুন হাসপাতাল ও অ্যাম্বুলেন্স তথ্য হালনাগাদ</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-6 pt-5 border-t border-slate-700/80 flex items-center justify-between text-xs text-slate-400">
+                        <span><i class="fa-solid fa-location-dot text-red-400 mr-1"></i> ঢাকা, বাংলাদেশ</span>
+                        <span><i class="fa-solid fa-shield-check text-emerald-400 mr-1"></i> ভেরিফায়েড ডাইরেক্টরি</span>
                     </div>
                 </div>
 
-            </div>
-        </section>
+                <!-- Developer Profile & WhatsApp Contact Card -->
+                <div class="lg:col-span-6 bg-gradient-to-br from-slate-800/90 to-slate-900 border border-emerald-500/30 rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute -top-16 -right-16 w-48 h-48 bg-emerald-500/10 rounded-full blur-2xl"></div>
 
-        <!-- Certifications Section -->
-        <section id="certificates" class="py-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">সার্টিফিকেট ও পেশাগত প্রশিক্ষণ</h2>
-                    <p class="text-slate-400">আন্তর্জাতিক লার্নিং প্ল্যাটফর্ম থেকে প্রাপ্ত সনদপত্র</p>
-                    <div class="w-20 h-1.5 bg-emerald-500 mx-auto rounded-full mt-4"></div>
-                </div>
+                    <div>
+                        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5 mb-6 text-center sm:text-left">
+                            <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-700 flex items-center justify-center text-white text-3xl font-bold shadow-lg shrink-0 border-2 border-emerald-400/40">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">প্রজেক্ট নির্মাতা ও ডেভেলপার</span>
+                                <h3 class="text-2xl font-bold text-white mt-0.5">Developer Rakib Attari</h3>
+                                <p class="text-sm text-slate-300 font-medium">রাকিবুল ইসলাম (Rakibul Islam)</p>
+                                <p class="text-xs text-slate-400 mt-1">Mobile App &amp; Web Developer • UI/UX Designer</p>
+                            </div>
+                        </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Certificate 1 -->
-                    <div class="glass-card p-8 rounded-3xl relative overflow-hidden group hover:border-emerald-500/50 transition-all">
-                        <div class="absolute -right-6 -bottom-6 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl group-hover:bg-emerald-500/20 transition-all"></div>
-                        <div class="flex items-center justify-between mb-6">
-                            <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold">২০২৬ সাল</span>
-                            <span class="text-2xl text-emerald-400 font-extrabold">৮৮.২৪%</span>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-2">CS205: Building with AI</h3>
-                        <p class="text-slate-400 text-sm mb-4">কৃত্রিম বুদ্ধিমত্তা (AI) ব্যবহার করে সিস্টেম তৈরি ও কাজ সম্পাদনের বিশেষ কোর্স।</p>
-                        <div class="space-y-2 text-xs text-slate-300 pt-4 border-t border-slate-700/60">
-                            <p><strong class="text-slate-400">প্রতিষ্ঠান:</strong> সেইলর একাডেমি (Saylor Academy)</p>
-                            <p><strong class="text-slate-400">সার্টিফিকেট আইডি:</strong> <span class="font-mono text-emerald-400">3974811819RI</span></p>
-                        </div>
-                    </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            ওয়েবসাইটটি ডিজাইন ও ডেভেলপ করেছেন <strong>Developer Rakib Attari</strong>। আপনার এলাকার কোনো জরুরি সেবা যুক্ত করতে চাইলে অথবা নতুন ওয়েবসাইট ও অ্যান্ড্রয়েড অ্যাপ তৈরি করতে নিচের হোয়াটসঅ্যাপ বাটনে ক্লিক করে সরাসরি কল বা মেসেজ করুন।
+                        </p>
 
-                    <!-- Certificate 2 -->
-                    <div class="glass-card p-8 rounded-3xl relative overflow-hidden group hover:border-cyan-500/50 transition-all">
-                        <div class="absolute -right-6 -bottom-6 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl group-hover:bg-cyan-500/20 transition-all"></div>
-                        <div class="flex items-center justify-between mb-6">
-                            <span class="px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 text-xs font-bold">২০২৬ সাল</span>
-                            <span class="text-2xl text-cyan-400 font-extrabold">৯৫.০০%</span>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-2">ESL006: Healthcare English</h3>
-                        <p class="text-slate-400 text-sm mb-4">স্বাস্থ্যসেবা সংক্রান্ত পেশাগত ইংরেজি ভাষা দক্ষতা কোর্স।</p>
-                        <div class="space-y-2 text-xs text-slate-300 pt-4 border-t border-slate-700/60">
-                            <p><strong class="text-slate-400">প্রতিষ্ঠান:</strong> সেইলর একাডেমি (Saylor Academy)</p>
-                            <p><strong class="text-slate-400">সার্টিফিকেট আইডি:</strong> <span class="font-mono text-cyan-400">5046200687RI</span></p>
+                        <!-- WhatsApp Number Highlight Box -->
+                        <div class="bg-slate-950/70 border border-slate-700 rounded-2xl p-4 mb-5 flex flex-wrap items-center justify-between gap-3">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400">হোয়াটসঅ্যাপ ও সরাসরি যোগাযোগ</div>
+                                    <div class="text-base sm:text-lg font-bold text-white tracking-wide">+880 1875-489015</div>
+                                </div>
+                            </div>
+                            <button onclick="copyNumber('01875489015')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold transition flex items-center gap-1.5">
+                                <i class="fa-regular fa-copy"></i> কপি নম্বর
+                            </button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-20 bg-slate-900/50">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <div class="glass-card p-8 sm:p-12 rounded-3xl border border-emerald-500/30">
-                    <h2 class="text-3xl font-bold text-white mb-4">যোগাযোগ করতে চান?</h2>
-                    <p class="text-slate-300 mb-8 max-w-lg mx-auto">অ্যাপ ডেভেলপমেন্ট, ওয়েব ডিজাইন কিংবা কোনো প্রাতিষ্ঠানিক কাজের বিষয়ে আমাকে সরাসরি বার্তা পাঠাতে পারেন।</p>
-                    
-                    <div class="inline-flex flex-col sm:flex-row gap-4 items-center justify-center">
-                        <a href="mailto:contact@rakibul.com" onclick="copyEmail(event)" class="px-8 py-4 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold shadow-lg transition-all flex items-center gap-2">
-                            <i class="fa-solid fa-envelope"></i> ঠিকানা বা তথ্য কপি করুন
+                    <!-- Direct Action Buttons -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                        <a href="https://wa.me/8801875489015?text=%E0%A6%86%E0%A6%B8%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%81%20%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81%E0%A6%AE%20Developer%20Rakib%20Attari,%20%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6%20%E0%A6%87%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%9C%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%B8%E0%A6%BF%20%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AD%E0%A6%BF%E0%A6%B8%20%E0%A6%A1%E0%A6%BE%E0%A6%87%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0%E0%A6%BF%20%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87%20%E0%A6%AF%E0%A7%8B%E0%A6%97%E0%A6%BE%E0%A6%AF%E0%A6%B0%E0%A6%97%20%E0%A6%95%E0%A6%B0%E0%A6%9B%E0%A6%BF%E0%A5%A4" target="_blank" rel="noopener noreferrer"
+                           class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-3 rounded-xl text-sm text-center transition flex items-center justify-center gap-1.5 shadow-lg">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> হোয়াটসঅ্যাপ
+                        </a>
+                        <a href="tel:+8801875489015"
+                           class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-3 rounded-xl text-sm text-center transition flex items-center justify-center gap-1.5 shadow-lg">
+                            <i class="fa-solid fa-phone"></i> সরাসরি কল
+                        </a>
+                        <a href="https://rakibhossrn1212175-ai.github.io/Rakib/" target="_blank" rel="noopener noreferrer"
+                           class="bg-slate-700 hover:bg-slate-600 text-white font-semibold py-3 px-3 rounded-xl text-sm text-center transition flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-globe"></i> পোর্টফোলিও
                         </a>
                     </div>
-                    <p id="copyAlert" class="text-xs text-emerald-400 mt-3 hidden">ঠিকানা কপি হয়েছে!</p>
                 </div>
             </div>
-        </section>
-
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="py-8 border-t border-slate-800 text-center text-slate-500 text-sm">
-        <div class="max-w-7xl mx-auto px-4">
-            <p>© ২০০৮ - ২০২৬ রাকিবুল ইসলাম। সর্বস্বত্ব সংরক্ষিত।</p>
-            <p class="text-xs text-slate-600 mt-1">গন্দমারা, বাঁশখালী, চট্টগ্রাম, বাংলাদেশ</p>
+    <footer class="bg-slate-950 text-slate-400 pt-14 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 border-b border-slate-800">
+                <div>
+                    <div class="flex items-center gap-3 text-white mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-red-600 flex items-center justify-center">
+                            <i class="fa-solid fa-truck-medical text-lg"></i>
+                        </div>
+                        <span class="font-bold text-xl">BD Emergency Directory</span>
+                    </div>
+                    <p class="text-sm leading-relaxed">
+                        বাংলাদেশের নাগরিকদের জরুরি মুহূর্তে দ্রুত সঠিক যোগাযোগ নম্বর পৌঁছে দেওয়ার একটি জনকল্যাণমূলক ডিজিটাল ডাইরেক্টরি প্ল্যাটফর্ম।
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">দ্রুত লিংকসমূহ</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#hotlines" class="hover:text-red-400 transition">জাতীয় জরুরি হটলাইন</a></li>
+                        <li><a href="#directory" class="hover:text-red-400 transition">ফায়ার সার্ভিস ও অ্যাম্বুলেন্স</a></li>
+                        <li><a href="#directory" class="hover:text-red-400 transition">হাসপাতাল ও ব্লাড ব্যাংক</a></li>
+                        <li><a href="#first-aid" class="hover:text-red-400 transition">প্রাথমিক চিকিৎসা নির্দেশিকা</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">গুরুত্বপূর্ণ সতর্কতা</h4>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        অপ্রয়োজনে বা মজা করার উদ্দেশ্যে জরুরি হেল্পলাইনে (৯৯৯ বা ১৬১৬৩) কল করবেন না। আপনার একটি অপ্রয়োজনীয় কল অন্য একজন প্রকৃত বিপদগ্রস্ত মানুষের জীবন বাঁচাতে বাধা সৃষ্টি করতে পারে।
+                    </p>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
+                <p>&copy; ২০২৬ বাংলাদেশ ইমার্জেন্সি সার্ভিস ডাইরেক্টরি। সর্বস্বত্ব সংরক্ষিত।</p>
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="https://wa.me/8801875489015" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-medium flex items-center gap-1.5 transition">
+                        <i class="fa-brands fa-whatsapp"></i> হোয়াটসঅ্যাপ যোগাযোগ
+                    </a>
+                    <span class="text-slate-700">|</span>
+                    <p class="text-slate-400">ডেভেলপমেন্ট ও ডিজাইন: <a href="https://rakibhossrn1212175-ai.github.io/Rakib/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-red-400 font-semibold transition">Developer Rakib Attari</a></p>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- Interactive Canvas & Interactive Scripts -->
+    <!-- Floating Mobile SOS Button -->
+    <a href="tel:999" class="fixed bottom-5 right-5 z-50 md:hidden w-14 h-14 rounded-full bg-red-600 text-white flex items-center justify-center shadow-2xl sos-glow animate-bounce" title="জরুরি কল ৯৯৯">
+        <span class="font-extrabold text-sm">৯৯৯</span>
+    </a>
+
+    <!-- Toast Notification for Copy -->
+    <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-slate-900 text-white px-5 py-3 rounded-full shadow-2xl border border-slate-700 text-sm font-medium flex items-center gap-2 opacity-0 pointer-events-none transition-opacity duration-300">
+        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+        <span id="toastMsg">নম্বর কপি করা হয়েছে!</span>
+    </div>
+
+    <!-- JavaScript Database & Interactivity -->
     <script>
-        // Mobile Menu Toggle logic
+        const emergencyData = [
+            { id: 1, name: "ফায়ার সার্ভিস কেন্দ্রীয় নিয়ন্ত্রণ কক্ষ (ঢাকা)", category: "fire", catLabel: "ফায়ার সার্ভিস", division: "ঢাকা", address: "কাজী আলাউদ্দিন রোড, ফুলবাড়িয়া, ঢাকা-১০০০", phone: "02223355555", displayPhone: "০২-২২৩৩৫৫৫৫৫ / ১৬১৬৩", badge: "২৪/৭ হেডকোয়ার্টার" },
+            { id: 2, name: "ফায়ার সার্ভিস নিয়ন্ত্রণ কক্ষ (চট্টগ্রাম)", category: "fire", catLabel: "ফায়ার সার্ভিস", division: "চট্টগ্রাম", address: "আগ্রাবাদ ফায়ার স্টেশন, চট্টগ্রাম", phone: "031716326", displayPhone: "০৩১-৭১৬৩২৬ / ০১৭৩০-০০২৪২১", badge: "বিভাগীয় কন্ট্রোল রুম" },
+            { id: 3, name: "ফায়ার সার্ভিস নিয়ন্ত্রণ কক্ষ (সিলেট)", category: "fire", catLabel: "ফায়ার সার্ভিস", division: "সিলেট", address: "তালতলা, সিলেট সদর, সিলেট", phone: "0821713998", displayPhone: "০৮২১-৭১৩৯৯৮ / ০১৭৩০-০০২৫০০", badge: "২৪/৭ জরুরি" },
+            { id: 4, name: "ফায়ার সার্ভিস নিয়ন্ত্রণ কক্ষ (রাজশাহী)", category: "fire", catLabel: "ফায়ার সার্ভিস", division: "রাজশাহী", address: "সিপাইপাড়া, রাজশাহী সদর, রাজশাহী", phone: "0721774224", displayPhone: "০৭২১-৭৭৪২২৪ / ০১৭৩০-০০২৪৮০", badge: "২৪/৭ জরুরি" },
+            { id: 5, name: "ফায়ার সার্ভিস নিয়ন্ত্রণ কক্ষ (খুলনা)", category: "fire", catLabel: "ফায়ার সার্ভিস", division: "খুলনা", address: "বয়রা, খুলনা সদর, খুলনা", phone: "041760333", displayPhone: "০৪১-৭৬০৩৩৩ / ০১৭৩০-০০২৫২০", badge: "২৪/৭ জরুরি" },
+            { id: 6, name: "ঢাকা মেডিকেল কলেজ অ্যাম্বুলেন্স সার্ভিস", category: "ambulance", catLabel: "অ্যাম্বুলেন্স", division: "ঢাকা", address: "বকশীবাজার, ঢাকা-১০০০", phone: "0255165088", displayPhone: "০২-৫৫১৬৫০৮৮", badge: "সরকারি অ্যাম্বুলেন্স" },
+            { id: 7, name: "আঞ্জুমান মুফিদুল ইসলাম অ্যাম্বুলেন্স সেবা", category: "ambulance", catLabel: "অ্যাম্বুলেন্স", division: "ঢাকা", address: "কাকরাইল ও মুগদা, ঢাকা", phone: "029336611", displayPhone: "০২-৯৩৩৬৬১১ / ০১৭১১-৫৪৫৬৭৮", badge: "ফ্রি / স্বল্পমূল্যে সেবা" },
+            { id: 8, name: "চট্টগ্রাম মেডিকেল অ্যাম্বুলেন্স সার্ভিস", category: "ambulance", catLabel: "অ্যাম্বুলেন্স", division: "চট্টগ্রাম", address: "পাঁচলাইশ, চট্টগ্রাম", phone: "031619400", displayPhone: "০৩১-৬১৯৪০০", badge: "২৪/৭ অক্সিজেন ও আইসিইউ" },
+            { id: 9, name: "কোয়ান্টাম অ্যাম্বুলেন্স সার্ভিস", category: "ambulance", catLabel: "অ্যাম্বুলেন্স", division: "ঢাকা", address: "শান্তিনগর, ঢাকা", phone: "01714010869", displayPhone: "০১৭১৪-০১০৮৬৯", badge: "২৪ ঘণ্টা সার্ভিস" },
+            { id: 10, name: "বরিশাল শের-ই-বাংলা মেডিকেল অ্যাম্বুলেন্স", category: "ambulance", catLabel: "অ্যাম্বুলেন্স", division: "বরিশাল", address: "বান্দ রোড, বরিশাল", phone: "04312173547", displayPhone: "০৪৩১-২১৭৩৫৪৭", badge: "সরকারি অ্যাম্বুলেন্স" },
+            { id: 11, name: "ঢাকা মেডিকেল কলেজ হাসপাতাল (DMCH)", category: "hospital", catLabel: "হাসপাতাল", division: "ঢাকা", address: "সেক্রেটারিয়েট রোড, শাহবাগ, ঢাকা", phone: "0255165001", displayPhone: "০২-৫৫১৬৫০০১", badge: "জরুরি বিভাগ ২৪/৭" },
+            { id: 12, name: "জাতীয় হৃদরোগ ইনস্টিটিউট ও হাসপাতাল (NICVD)", category: "hospital", catLabel: "হাসপাতাল", division: "ঢাকা", address: "শেরেবাংলা নগর, ঢাকা-১২০৭", phone: "029122560", displayPhone: "০২-৯১২২৫৬০", badge: "হৃদরোগ জরুরি সেবা" },
+            { id: 13, name: "শেখ হাসিনা জাতীয় বার্ন ও প্লাস্টিক সার্জারি ইনস্টিটিউট", category: "hospital", catLabel: "হাসপাতাল", division: "ঢাকা", address: "চাঁনখারপুল, ঢাকা", phone: "0255165001", displayPhone: "০২-৫৫১৬৫০০১", badge: "বার্ন ও প্লাস্টিক সার্জারি" },
+            { id: 14, name: "চট্টগ্রাম মেডিকেল কলেজ হাসপাতাল (CMCH)", category: "hospital", catLabel: "হাসপাতাল", division: "চট্টগ্রাম", address: "কে.বি. ফজলুল কাদের রোড, চট্টগ্রাম", phone: "031619400", displayPhone: "০৩১-৬১৯৪০০", badge: "জরুরি বিভাগ ২৪/৭" },
+            { id: 15, name: "সিলেট এম.এ.জি. ওসমানী মেডিকেল কলেজ হাসপাতাল", category: "hospital", catLabel: "হাসপাতাল", division: "সিলেট", address: "কাজলশাহ, সিলেট-৩১০০", phone: "0821713667", displayPhone: "০৮২১-৭১৩৬৬৭", badge: "জরুরি বিভাগ ২৪/৭" },
+            { id: 16, name: "রাজশাহী মেডিকেল কলেজ হাসপাতাল (RMCH)", category: "hospital", catLabel: "হাসপাতাল", division: "রাজশাহী", address: "লক্ষ্মীপুর, রাজশাহী-৬০০০", phone: "0721772150", displayPhone: "০৭২১-৭৭২১৫০", badge: "জরুরি বিভাগ ২৪/৭" },
+            { id: 17, name: "রংপুর মেডিকেল কলেজ হাসপাতাল (RpMCH)", category: "hospital", catLabel: "হাসপাতাল", division: "রংপুর", address: "ধাপ, রংপুর সদর, রংপুর", phone: "052163388", displayPhone: "০৫২১-৬৩৩৮৮", badge: "জরুরি বিভাগ ২৪/৭" },
+            { id: 18, name: "ময়মনসিংহ মেডিকেল কলেজ হাসপাতাল (MMCH)", category: "hospital", catLabel: "হাসপাতাল", division: "ময়মনসিংহ", address: "চরপাড়া, ময়মনসিংহ", phone: "09166063", displayPhone: "০৯১-৬৬০৬৩", badge: "জরুরি বিভাগ ২৪/৭" },
+            { id: 19, name: "বাংলাদেশ পুলিশ হেডকোয়ার্টার্স কন্ট্রোল রুম", category: "police", catLabel: "পুলিশ ও র‍্যাব", division: "ঢাকা", address: "ফুলবাড়িয়া, ঢাকা-১০০০", phone: "01320001299", displayPhone: "০১৩২০-০০১২৯৯ / ৯৯৯", badge: "কেন্দ্রীয় কন্ট্রোল রুম" },
+            { id: 20, name: "ডিএমপি (DMP) কেন্দ্রীয় কমান্ড অ্যান্ড কন্ট্রোল সেন্টার", category: "police", catLabel: "পুলিশ ও র‍্যাব", division: "ঢাকা", address: "আব্দুল গনি রোড, ঢাকা", phone: "01320037845", displayPhone: "০১৩২০-০৩৭৮৪৫", badge: "ঢাকা মেট্রোপলিটন পুলিশ" },
+            { id: 21, name: "সিএমপি (CMP) পুলিশ কন্ট্রোল রুম", category: "police", catLabel: "পুলিশ ও র‍্যাব", division: "চট্টগ্রাম", address: "দামপাড়া পুলিশ লাইন, চট্টগ্রাম", phone: "031639022", displayPhone: "০৩১-৬৩৯০২২ / ০১৩২০-০৫৭৯৯৮", badge: "চট্টগ্রাম মেট্রোপলিটন পুলিশ" },
+            { id: 22, name: "র‍্যাব (RAB) হেডকোয়ার্টার্স কন্ট্রোল রুম", category: "police", catLabel: "পুলিশ ও র‍্যাব", division: "ঢাকা", address: "কুর্মিটোলা, উত্তরা, ঢাকা", phone: "01777720029", displayPhone: "০১৭৭৭-৭২০০২৯", badge: "র‍্যাপিড অ্যাকশন ব্যাটালিয়ন" },
+            { id: 23, name: "সন্ধানী কেন্দ্রীয় রক্ত পরিসঞ্চালন কেন্দ্র", category: "blood", catLabel: "ব্লাড ব্যাংক", division: "ঢাকা", address: "ঢাকা মেডিকেল কলেজ প্রাঙ্গণ, ঢাকা", phone: "029668690", displayPhone: "০২-৯৬৬৮৬৯০ / ০১৮১৯-২৮৪৮৭৮", badge: "স্বেচ্ছায় রক্তদান" },
+            { id: 24, name: "বাংলাদেশ রেড ক্রিসেন্ট রক্ত কেন্দ্র", category: "blood", catLabel: "ব্লাড ব্যাংক", division: "ঢাকা", address: "৭/৫ আওরঙ্গজেব রোড, মোহাম্মদপুর, ঢাকা", phone: "029116563", displayPhone: "০২-৯১১৬৫৬৩ / ০১৮১১-৪৫৮৫২৪", badge: "২৪/৭ ব্লাড ব্যাংক" },
+            { id: 25, name: "কোয়ান্টাম ল্যাব ও ব্লাড ব্যাংক", category: "blood", catLabel: "ব্লাড ব্যাংক", division: "ঢাকা", address: "৩১/ভি শিল্পাচার্য জয়নুল আবেদিন সড়ক, শান্তিনগর, ঢাকা", phone: "01714010869", displayPhone: "০১৭১৪-০১০৮৬৯", badge: "২৪ ঘণ্টা খোলা" },
+            { id: 26, name: "সন্ধানী চট্টগ্রাম মেডিকেল কলেজ ইউনিট", category: "blood", catLabel: "ব্লাড ব্যাংক", division: "চট্টগ্রাম", address: "চট্টগ্রাম মেডিকেল কলেজ, পাঁচলাইশ, চট্টগ্রাম", phone: "031616625", displayPhone: "০৩১-৬১৬৬২৫", badge: "জরুরি রক্তের প্রয়োজনে" }
+        ];
+
+        const categoryStyles = {
+            fire: { icon: "fa-fire-extinguisher", bg: "bg-orange-100", text: "text-orange-600", btn: "bg-orange-600 hover:bg-orange-700" },
+            ambulance: { icon: "fa-truck-medical", bg: "bg-red-100", text: "text-red-600", btn: "bg-red-600 hover:bg-red-700" },
+            hospital: { icon: "fa-hospital", bg: "bg-emerald-100", text: "text-emerald-600", btn: "bg-emerald-600 hover:bg-emerald-700" },
+            police: { icon: "fa-shield-halved", bg: "bg-blue-100", text: "text-blue-600", btn: "bg-blue-600 hover:bg-blue-700" },
+            blood: { icon: "fa-droplet", bg: "bg-rose-100", text: "text-rose-600", btn: "bg-rose-600 hover:bg-rose-700" }
+        };
+
+        let currentCategory = 'all';
+        let currentDivision = 'all';
+        let currentSearch = '';
+
+        const gridEl = document.getElementById('directoryGrid');
+        const emptyEl = document.getElementById('emptyState');
+        const countEl = document.getElementById('resultCount');
+        const searchInput = document.getElementById('directorySearch');
+        const heroSearchInput = document.getElementById('heroSearchInput');
+        const divisionSelect = document.getElementById('divisionFilter');
+
+        function toBanglaNumber(num) {
+            const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+            return num.toString().replace(/\d/g, d => banglaDigits[d]);
+        }
+
+        function renderCards() {
+            const filtered = emergencyData.filter(item => {
+                const matchesCat = currentCategory === 'all' || item.category === currentCategory;
+                const matchesDiv = currentDivision === 'all' || item.division === currentDivision;
+                const query = currentSearch.toLowerCase().trim();
+                const matchesSearch = !query || 
+                    item.name.toLowerCase().includes(query) ||
+                    item.address.toLowerCase().includes(query) ||
+                    item.division.toLowerCase().includes(query) ||
+                    item.catLabel.toLowerCase().includes(query) ||
+                    item.displayPhone.includes(query) ||
+                    item.phone.includes(query);
+                return matchesCat && matchesDiv && matchesSearch;
+            });
+
+            countEl.textContent = `মোট সেবা: ${toBanglaNumber(filtered.length)}টি`;
+
+            if (filtered.length === 0) {
+                gridEl.innerHTML = '';
+                emptyEl.classList.remove('hidden');
+                return;
+            }
+
+            emptyEl.classList.add('hidden');
+            gridEl.innerHTML = filtered.map(item => {
+                const style = categoryStyles[item.category];
+                return `
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm card-hover flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-start justify-between gap-3 mb-4">
+                                <div class="w-12 h-12 rounded-xl ${style.bg} ${style.text} flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid ${style.icon}"></i>
+                                </div>
+                                <div class="flex flex-wrap gap-1.5 justify-end">
+                                    <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700">
+                                        <i class="fa-solid fa-location-dot text-red-500 mr-1"></i>${item.division}
+                                    </span>
+                                    <span class="px-2.5 py-1 rounded-full text-xs font-semibold ${style.bg} ${style.text}">
+                                        ${item.catLabel}
+                                    </span>
+                                </div>
+                            </div>
+
+                            <h3 class="font-bold text-lg text-slate-900 leading-snug mb-2">${item.name}</h3>
+                            <p class="text-sm text-slate-600 flex items-start gap-2 mb-3">
+                                <i class="fa-solid fa-map-pin text-slate-400 mt-1 shrink-0"></i>
+                                <span>${item.address}</span>
+                            </p>
+                            <div class="inline-block px-2.5 py-1 rounded-md bg-slate-50 border border-slate-200 text-xs font-medium text-slate-600 mb-4">
+                                <i class="fa-solid fa-clock text-emerald-600 mr-1"></i> ${item.badge}
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-slate-100">
+                            <div class="text-base font-bold text-slate-800 mb-3 flex items-center justify-between">
+                                <span><i class="fa-solid fa-phone text-slate-400 mr-2 text-sm"></i>${item.displayPhone}</span>
+                            </div>
+                            <div class="flex gap-2">
+                                <a href="tel:${item.phone}" class="flex-1 ${style.btn} text-white font-semibold py-2.5 px-4 rounded-xl text-sm text-center transition flex items-center justify-center gap-2 shadow-sm">
+                                    <i class="fa-solid fa-phone-volume"></i> সরাসরি কল করুন
+                                </a>
+                                <button onclick="copyNumber('${item.phone}')" class="px-3.5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium text-sm transition" title="নম্বর কপি করুন">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        document.querySelectorAll('.cat-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.cat-btn').forEach(b => {
+                    b.classList.remove('bg-red-600', 'text-white', 'shadow-sm');
+                    b.classList.add('bg-slate-100', 'text-slate-700');
+                });
+                btn.classList.remove('bg-slate-100', 'text-slate-700');
+                btn.classList.add('bg-red-600', 'text-white', 'shadow-sm');
+                
+                currentCategory = btn.getAttribute('data-cat');
+                renderCards();
+            });
+        });
+
+        searchInput.addEventListener('input', (e) => {
+            currentSearch = e.target.value;
+            heroSearchInput.value = e.target.value;
+            renderCards();
+        });
+
+        heroSearchInput.addEventListener('input', (e) => {
+            currentSearch = e.target.value;
+            searchInput.value = e.target.value;
+            renderCards();
+        });
+
+        heroSearchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                scrollToDirectory();
+            }
+        });
+
+        divisionSelect.addEventListener('change', (e) => {
+            currentDivision = e.target.value;
+            renderCards();
+        });
+
+        function scrollToDirectory() {
+            document.getElementById('directory').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function resetFilters() {
+            currentCategory = 'all';
+            currentDivision = 'all';
+            currentSearch = '';
+            searchInput.value = '';
+            heroSearchInput.value = '';
+            divisionSelect.value = 'all';
+
+            document.querySelectorAll('.cat-btn').forEach(b => {
+                b.classList.remove('bg-red-600', 'text-white', 'shadow-sm');
+                b.classList.add('bg-slate-100', 'text-slate-700');
+            });
+            const allBtn = document.querySelector('.cat-btn[data-cat="all"]');
+            allBtn.classList.remove('bg-slate-100', 'text-slate-700');
+            allBtn.classList.add('bg-red-600', 'text-white', 'shadow-sm');
+
+            renderCards();
+        }
+
+        function copyNumber(num) {
+            navigator.clipboard.writeText(num).then(() => {
+                showToast(`নম্বর কপি করা হয়েছে: ${num}`);
+            }).catch(() => {
+                const tempInput = document.createElement('input');
+                tempInput.value = num;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempInput);
+                showToast(`নম্বর কপি করা হয়েছে: ${num}`);
+            });
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMsg');
+            toastMsg.textContent = message;
+            toast.classList.remove('opacity-0');
+            toast.classList.add('opacity-100');
+            setTimeout(() => {
+                toast.classList.remove('opacity-100');
+                toast.classList.add('opacity-0');
+            }, 2500);
+        }
+
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
-
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Copy button script
-        function copyEmail(e) {
-            e.preventDefault();
-            const textToCopy = "রাকিবুল ইসলাম - গন্দমারা, বাঁশখালী, চট্টগ্রাম";
-            const tempInput = document.createElement("input");
-            tempInput.value = textToCopy;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand("copy");
-            document.body.removeChild(tempInput);
-            
-            const alertMsg = document.getElementById('copyAlert');
-            alertMsg.classList.remove('hidden');
-            setTimeout(() => {
-                alertMsg.classList.add('hidden');
-            }, 3000);
-        }
-
-        // Animated Particle Background Canvas Script
-        const canvas = document.getElementById('bgCanvas');
-        const ctx = canvas.getContext('2d');
-
-        let particlesArray = [];
-        const numberOfParticles = 45;
-
-        function setCanvasSize() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
-
-        setCanvasSize();
-        window.addEventListener('resize', setCanvasSize);
-
-        class Particle {
-            constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 2 + 1;
-                this.speedX = (Math.random() - 0.5) * 0.4;
-                this.speedY = (Math.random() - 0.5) * 0.4;
-                this.color = '#10b981';
-            }
-
-            update() {
-                this.x += this.speedX;
-                this.y += this.speedY;
-
-                if (this.x > canvas.width) this.x = 0;
-                if (this.x < 0) this.x = canvas.width;
-                if (this.y > canvas.height) this.y = 0;
-                if (this.y < 0) this.y = canvas.height;
-            }
-
-            draw() {
-                ctx.fillStyle = this.color;
-                ctx.globalAlpha = 0.3;
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fill();
-            }
-        }
-
-        function initParticles() {
-            particlesArray = [];
-            for (let i = 0; i < numberOfParticles; i++) {
-                particlesArray.push(new Particle());
-            }
-        }
-
-        function animateParticles() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            for (let i = 0; i < particlesArray.length; i++) {
-                particlesArray[i].update();
-                particlesArray[i].draw();
-
-                // Connect particles with subtle lines
-                for (let j = i; j < particlesArray.length; j++) {
-                    const dx = particlesArray[i].x - particlesArray[j].x;
-                    const dy = particlesArray[i].y - particlesArray[j].y;
-                    const distance = Math.sqrt(dx * dx + dy * dy);
-
-                    if (distance < 120) {
-                        ctx.beginPath();
-                        ctx.strokeStyle = '#10b981';
-                        ctx.globalAlpha = 0.05;
-                        ctx.lineWidth = 1;
-                        ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
-                        ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
-                        ctx.stroke();
-                    }
-                }
-            }
-            requestAnimationFrame(animateParticles);
-        }
-
-        window.onload = function () {
-            initParticles();
-            animateParticles();
-        };
+        renderCards();
     </script>
 </body>
 </html>
